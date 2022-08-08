@@ -4,7 +4,7 @@ const petroleumData = [
         "brand": "MAPFRE",
         "companies": [
             {
-                "companyName": "MAPFRE Patrimonial Mock",
+                "companyName": "MAPFRE Petroleum Mock",
                 "cnpjNumber": "12345678901234",
                 "policies": [
                     "ae96b143-00ae-4d1c-b00e-20bed164a1f2",
@@ -19,7 +19,7 @@ const petroleumData = [
         "brand": "MAPFRE",
         "companies": [
             {
-                "companyName": "MAPFRE Patrimonial Mock",
+                "companyName": "MAPFRE Petroleum Mock",
                 "cnpjNumber": "12345678901234",
                 "policies": [
                     "e00dace0-104e-11ed-861d-0242ac120002"
@@ -32,7 +32,7 @@ const petroleumData = [
         "brand": "MAPFRE",
         "companies": [
             {
-                "companyName": "MAPFRE Patrimonial Mock",
+                "companyName": "MAPFRE Petroleum Mock",
                 "cnpjNumber": "12345678901234",
                 "policies": [
                     "071641e8-1050-11ed-861d-0242ac120002",
