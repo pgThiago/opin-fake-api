@@ -13,4 +13,4 @@ app.get('/patrimonial/:cpf/claim', (req, res) => getClaim(req, res))
 
 
 
-app.listen(3333);
+app.listen(process.env.port || 80);
