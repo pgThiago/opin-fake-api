@@ -1,4 +1,4 @@
-const patrimonialData = [
+const aviationData = [
     {
         "cpf": "85711574051",
         "brand": "MAPFRE",
@@ -45,7 +45,7 @@ const patrimonialData = [
     }
 ]
 
-const patrimonialPremiumData = [
+const aviationPremiumData = [
     {
         "cpf": "85711574051",
         "paymentsQuantity": 4,
@@ -159,7 +159,7 @@ const patrimonialPremiumData = [
     }
 ]
 
-const patrimonialClaimData = [
+const aviationClaimData = [
     {
         "cpf": "85711574051",
         "identification": "string",
@@ -240,7 +240,7 @@ const patrimonialClaimData = [
     }
 ]
 
-const patrimonialPolicyInfoData = [
+const aviationPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
@@ -561,34 +561,34 @@ const patrimonialPolicyInfoData = [
     }
 ]
 
-exports.getPatrimonial = (req, res, next) => {
+exports.getAviation = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialData.filter(item => item.cpf === cpf)
+    const filteredData = aviationData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialClaim = (req, res, next) => {
+exports.getAviationClaim = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialClaimData.filter(item => item.cpf === cpf)
+    const filteredData = aviationClaimData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPolicyInfo = (req, res, next) => {
+exports.getAviationPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = aviationPolicyInfoData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPremium = (req, res, next) => {
+exports.getAviationPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = aviationPremiumData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

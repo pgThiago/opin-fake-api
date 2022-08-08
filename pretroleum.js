@@ -1,4 +1,4 @@
-const patrimonialData = [
+const petroleumData = [
     {
         "cpf": "85711574051",
         "brand": "MAPFRE",
@@ -45,7 +45,7 @@ const patrimonialData = [
     }
 ]
 
-const patrimonialPremiumData = [
+const petroleumPremiumData = [
     {
         "cpf": "85711574051",
         "paymentsQuantity": 4,
@@ -159,7 +159,7 @@ const patrimonialPremiumData = [
     }
 ]
 
-const patrimonialClaimData = [
+const petroleumClaimData = [
     {
         "cpf": "85711574051",
         "identification": "string",
@@ -240,7 +240,7 @@ const patrimonialClaimData = [
     }
 ]
 
-const patrimonialPolicyInfoData = [
+const petroleumPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
@@ -561,34 +561,34 @@ const patrimonialPolicyInfoData = [
     }
 ]
 
-exports.getPatrimonial = (req, res, next) => {
+exports.getPetroleum = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialClaim = (req, res, next) => {
+exports.getPetroleumClaim = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialClaimData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumClaimData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPolicyInfo = (req, res, next) => {
+exports.getPetroleumPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumPolicyInfoData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPremium = (req, res, next) => {
+exports.getPetroleumPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumPremiumData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

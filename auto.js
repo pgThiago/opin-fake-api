@@ -1,4 +1,4 @@
-const patrimonialData = [
+const autoData = [
     {
         "cpf": "85711574051",
         "brand": "MAPFRE",
@@ -45,7 +45,7 @@ const patrimonialData = [
     }
 ]
 
-const patrimonialPremiumData = [
+const autoPremiumData = [
     {
         "cpf": "85711574051",
         "paymentsQuantity": 4,
@@ -159,7 +159,7 @@ const patrimonialPremiumData = [
     }
 ]
 
-const patrimonialClaimData = [
+const autoClaimData = [
     {
         "cpf": "85711574051",
         "identification": "string",
@@ -240,7 +240,7 @@ const patrimonialClaimData = [
     }
 ]
 
-const patrimonialPolicyInfoData = [
+const autoPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
@@ -561,34 +561,34 @@ const patrimonialPolicyInfoData = [
     }
 ]
 
-exports.getPatrimonial = (req, res, next) => {
+exports.getAuto = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialData.filter(item => item.cpf === cpf)
+    const filteredData = autoData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialClaim = (req, res, next) => {
+exports.getAutoClaim = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialClaimData.filter(item => item.cpf === cpf)
+    const filteredData = autoClaimData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPolicyInfo = (req, res, next) => {
+exports.getAutoPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = autoPolicyInfoData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPremium = (req, res, next) => {
+exports.getAutoPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = autoPremiumData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

@@ -1,4 +1,4 @@
-const patrimonialData = [
+const responsibilityData = [
     {
         "cpf": "85711574051",
         "brand": "MAPFRE",
@@ -45,7 +45,7 @@ const patrimonialData = [
     }
 ]
 
-const patrimonialPremiumData = [
+const responsibilityPremiumData = [
     {
         "cpf": "85711574051",
         "paymentsQuantity": 4,
@@ -159,7 +159,7 @@ const patrimonialPremiumData = [
     }
 ]
 
-const patrimonialClaimData = [
+const responsibilityClaimData = [
     {
         "cpf": "85711574051",
         "identification": "string",
@@ -240,7 +240,7 @@ const patrimonialClaimData = [
     }
 ]
 
-const patrimonialPolicyInfoData = [
+const responsibilityPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
@@ -561,34 +561,34 @@ const patrimonialPolicyInfoData = [
     }
 ]
 
-exports.getPatrimonial = (req, res, next) => {
+exports.getResponsibility = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialClaim = (req, res, next) => {
+exports.getResponsibilityClaim = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialClaimData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityClaimData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPolicyInfo = (req, res, next) => {
+exports.getResponsibilityPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityPolicyInfoData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
 
-exports.getPatrimonialPremium = (req, res, next) => {
+exports.getResponsibilityPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityPremiumData.filter(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
