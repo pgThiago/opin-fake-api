@@ -244,6 +244,7 @@ const patrimonialPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -403,6 +404,7 @@ const patrimonialPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -580,7 +582,7 @@ exports.getPatrimonialClaim = (req, res, next) => {
 exports.getPatrimonialPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = patrimonialPolicyInfoData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
@@ -588,7 +590,7 @@ exports.getPatrimonialPolicyInfo = (req, res, next) => {
 exports.getPatrimonialPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = patrimonialPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = patrimonialPremiumData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

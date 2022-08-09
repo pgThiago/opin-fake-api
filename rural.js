@@ -56,7 +56,7 @@ const ruralPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -93,7 +93,7 @@ const ruralPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -130,7 +130,7 @@ const ruralPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -179,12 +179,22 @@ const ruralClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "surveyDate": "AAAA-MM-DD",
+            "surveyAddress": "string",
+            "surveyCountrySubDivision": "SP",
+            "surveyPostCode": "10000000",
+            "surveyCountryCode": "BRA",
+            "surveyorIdType": "CPF",
+            "surveyorId": "40",
+            "surveyorName": "string"
+        }
     },
     {
         "cpf": "02188705076",
@@ -205,12 +215,22 @@ const ruralClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "surveyDate": "AAAA-MM-DD",
+            "surveyAddress": "string",
+            "surveyCountrySubDivision": "SP",
+            "surveyPostCode": "10000000",
+            "surveyCountryCode": "BRA",
+            "surveyorIdType": "CPF",
+            "surveyorId": "40",
+            "surveyorName": "string"
+        }
     },
     {
         "cpf": "15387180065",
@@ -231,12 +251,22 @@ const ruralClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "surveyDate": "AAAA-MM-DD",
+            "surveyAddress": "string",
+            "surveyCountrySubDivision": "SP",
+            "surveyPostCode": "10000000",
+            "surveyCountryCode": "BRA",
+            "surveyorIdType": "CPF",
+            "surveyorId": "40",
+            "surveyorName": "string"
+        }
     }
 ]
 
@@ -244,6 +274,7 @@ const ruralPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -323,7 +354,7 @@ const ruralPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "GRANIZO",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -349,7 +380,7 @@ const ruralPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -388,14 +419,32 @@ const ruralPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "isFESRParticipant": true,
+                    "subventionAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "subventionType": "AC",
+                    "safeArea": 2000,
+                    "unitMeasure": "HECTAR",
+                    "cultureCode": 11111111,
+                    "flockCode": "BOVINOS",
+                    "forestCode": "PINUS",
+                    "surveyDate": "AAAA-MM-DD",
+                    "surveyAddress": "string",
+                    "surveyCountrySubDivision": "SP",
+                    "surveyPostCode": "10000000",
+                    "surveyCountryCode": "BRA",
+                    "surveyorIdType": "CPF",
+                    "surveyorId": "40",
+                    "surveyorName": "string",
+                    "modelType": "CLIMATICOS",
+                    "areAssetsCovered": true,
+                    "coveredAnimalDestination": "CONSUMO",
+                    "animalType": "ELITE"
                 }
             ]
         }
@@ -403,6 +452,7 @@ const ruralPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -482,7 +532,7 @@ const ruralPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "GRANIZO",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -508,7 +558,7 @@ const ruralPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "GRANIZO",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -547,14 +597,32 @@ const ruralPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "isFESRParticipant": true,
+                    "subventionAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "subventionType": "AC",
+                    "safeArea": 2000,
+                    "unitMeasure": "HECTAR",
+                    "cultureCode": 11111111,
+                    "flockCode": "BOVINOS",
+                    "forestCode": "PINUS",
+                    "surveyDate": "AAAA-MM-DD",
+                    "surveyAddress": "string",
+                    "surveyCountrySubDivision": "SP",
+                    "surveyPostCode": "10000000",
+                    "surveyCountryCode": "BRA",
+                    "surveyorIdType": "CPF",
+                    "surveyorId": "40",
+                    "surveyorName": "string",
+                    "modelType": "CLIMATICOS",
+                    "areAssetsCovered": true,
+                    "coveredAnimalDestination": "CONSUMO",
+                    "animalType": "ELITE"
                 }
             ]
         }
@@ -580,7 +648,7 @@ exports.getRuralClaim = (req, res, next) => {
 exports.getRuralPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = ruralPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = ruralPolicyInfoData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
@@ -588,7 +656,7 @@ exports.getRuralPolicyInfo = (req, res, next) => {
 exports.getRuralPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = ruralPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = ruralPremiumData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
