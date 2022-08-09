@@ -243,6 +243,7 @@ const responsibilityClaimData = [
 const responsibilityPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
+        "policyId": "111111",
         "cpf": "85711574051",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -388,20 +389,59 @@ const responsibilityPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
+            "coverages": [
+                {
+                    "branch": "111",
+                    "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                    "description": "string",
+                    "type": "POR_OCORRENCIA",
+                    "typeDescription": "string",
+                    "retroactivityDate": "AAAA-MM-DD",
+                    "retroactivityPeriod": "string",
+                    "retroactivityTimeUnit": "DIA",
+                    "retroactivityWorkingDaysIndex": "DIAS_UTEIS",
+                    "complementaryTermStartDate": "AAAA-MM-DD",
+                    "complementaryTermEndDate": "AAAA-MM-DD",
+                    "complementaryTerm": "string",
+                    "complementaryTermTimeUnit": "DIA",
+                    "complementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "supplementaryTermStartDate": "AAAA-MM-DD",
+                    "supplementaryTermEndDate": "AAAA-MM-DD",
+                    "supplementaryTerm": "string",
+                    "supplementaryTermTimeUnit": "DIA",
+                    "supplementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "lawyerRecommendation": "ESCOLHIDO_PELO_SEGURADO",
+                    "lawyerRecommendationDescription": "string"
+                }
+            ],
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "hasComplementaryContract": true,
+                    "complementaryContractAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesMaxAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesTermStartDate": "AAAA-MM-DD",
+                    "coveragesTermEndDate": "AAAA-MM-DD",
+                    "coveragesTerm": 100,
+                    "coveragesUnit": "DIA",
+                    "coveragesWorkingDaysIndex": "DIAS_UTEIS",
+                    "hasTransportationPollutionDamage": true,
+                    "hasThirdPatyDamage": true,
+                    "professionalClass": "ADMINISTRADOR_IMOBILIARIO",
+                    "hasRetroactivityApplication": true
                 }
             ]
         }
     },
     {
         "documentType": "APOLICE_INDIVIDUAL",
+        "policyId": "111111",
         "cpf": "02188705076",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -547,14 +587,52 @@ const responsibilityPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
+            "coverages": [
+                {
+                    "branch": "111",
+                    "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                    "description": "string",
+                    "type": "POR_OCORRENCIA",
+                    "typeDescription": "string",
+                    "retroactivityDate": "AAAA-MM-DD",
+                    "retroactivityPeriod": "string",
+                    "retroactivityTimeUnit": "DIA",
+                    "retroactivityWorkingDaysIndex": "DIAS_UTEIS",
+                    "complementaryTermStartDate": "AAAA-MM-DD",
+                    "complementaryTermEndDate": "AAAA-MM-DD",
+                    "complementaryTerm": "string",
+                    "complementaryTermTimeUnit": "DIA",
+                    "complementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "supplementaryTermStartDate": "AAAA-MM-DD",
+                    "supplementaryTermEndDate": "AAAA-MM-DD",
+                    "supplementaryTerm": "string",
+                    "supplementaryTermTimeUnit": "DIA",
+                    "supplementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "lawyerRecommendation": "ESCOLHIDO_PELO_SEGURADO",
+                    "lawyerRecommendationDescription": "string"
+                }
+            ],
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "hasComplementaryContract": true,
+                    "complementaryContractAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesMaxAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesTermStartDate": "AAAA-MM-DD",
+                    "coveragesTermEndDate": "AAAA-MM-DD",
+                    "coveragesTerm": 100,
+                    "coveragesUnit": "DIA",
+                    "coveragesWorkingDaysIndex": "DIAS_UTEIS",
+                    "hasTransportationPollutionDamage": true,
+                    "hasThirdPatyDamage": true,
+                    "professionalClass": "ADMINISTRADOR_IMOBILIARIO",
+                    "hasRetroactivityApplication": true
                 }
             ]
         }
