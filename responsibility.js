@@ -56,81 +56,7 @@ const responsibilityPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
-                "description": "string",
-                "premiumAmount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                }
-            }
-        ],
-        "payments": [
-            {
-                "movementDate": "AAAA-MM-DD",
-                "movementType": "LIQUIDACAO_DE_PREMIO",
-                "movementOrigin": "EMISSAO_DIRETA",
-                "movementPaymentsNumber": 0,
-                "amount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                },
-                "maturityDate": "AAAA-MM-DD",
-                "tellerId": "string",
-                "tellerIdType": "CPF",
-                "tellerName": "string",
-                "financialInstitutionCode": "string",
-                "paymentType": "BOLETO"
-            }
-        ]
-    },
-    {
-        "cpf": "15387180065",
-        "paymentsQuantity": 4,
-        "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-        },
-        "coverages": [
-            {
-                "branch": "111",
-                "code": "LUCRO_BRUTO",
-                "description": "string",
-                "premiumAmount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                }
-            }
-        ],
-        "payments": [
-            {
-                "movementDate": "AAAA-MM-DD",
-                "movementType": "LIQUIDACAO_DE_PREMIO",
-                "movementOrigin": "EMISSAO_DIRETA",
-                "movementPaymentsNumber": 0,
-                "amount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                },
-                "maturityDate": "AAAA-MM-DD",
-                "tellerId": "string",
-                "tellerIdType": "CPF",
-                "tellerName": "string",
-                "financialInstitutionCode": "string",
-                "paymentType": "BOLETO"
-            }
-        ]
-    },
-    {
-        "cpf": "02188705076",
-        "paymentsQuantity": 4,
-        "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-        },
-        "coverages": [
-            {
-                "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -179,7 +105,7 @@ const responsibilityClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -205,7 +131,7 @@ const responsibilityClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -231,7 +157,7 @@ const responsibilityClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -243,6 +169,7 @@ const responsibilityClaimData = [
 const responsibilityPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
+        "policyId": "111111",
         "cpf": "85711574051",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -323,7 +250,7 @@ const responsibilityPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "DANOS_CAUSADOS_A_TERCEIROS",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -349,7 +276,7 @@ const responsibilityPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -388,20 +315,59 @@ const responsibilityPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
+            "coverages": [
+                {
+                    "branch": "111",
+                    "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                    "description": "string",
+                    "type": "POR_OCORRENCIA",
+                    "typeDescription": "string",
+                    "retroactivityDate": "AAAA-MM-DD",
+                    "retroactivityPeriod": "string",
+                    "retroactivityTimeUnit": "DIA",
+                    "retroactivityWorkingDaysIndex": "DIAS_UTEIS",
+                    "complementaryTermStartDate": "AAAA-MM-DD",
+                    "complementaryTermEndDate": "AAAA-MM-DD",
+                    "complementaryTerm": "string",
+                    "complementaryTermTimeUnit": "DIA",
+                    "complementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "supplementaryTermStartDate": "AAAA-MM-DD",
+                    "supplementaryTermEndDate": "AAAA-MM-DD",
+                    "supplementaryTerm": "string",
+                    "supplementaryTermTimeUnit": "DIA",
+                    "supplementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "lawyerRecommendation": "ESCOLHIDO_PELO_SEGURADO",
+                    "lawyerRecommendationDescription": "string"
+                }
+            ],
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "hasComplementaryContract": true,
+                    "complementaryContractAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesMaxAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesTermStartDate": "AAAA-MM-DD",
+                    "coveragesTermEndDate": "AAAA-MM-DD",
+                    "coveragesTerm": 100,
+                    "coveragesUnit": "DIA",
+                    "coveragesWorkingDaysIndex": "DIAS_UTEIS",
+                    "hasTransportationPollutionDamage": true,
+                    "hasThirdPatyDamage": true,
+                    "professionalClass": "ADMINISTRADOR_IMOBILIARIO",
+                    "hasRetroactivityApplication": true
                 }
             ]
         }
     },
     {
         "documentType": "APOLICE_INDIVIDUAL",
+        "policyId": "111111",
         "cpf": "02188705076",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -482,7 +448,7 @@ const responsibilityPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "DANOS_CAUSADOS_A_TERCEIROS",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -508,7 +474,7 @@ const responsibilityPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -547,14 +513,52 @@ const responsibilityPolicyInfoData = [
             }
         ],
         "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
+            "coverages": [
+                {
+                    "branch": "111",
+                    "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                    "description": "string",
+                    "type": "POR_OCORRENCIA",
+                    "typeDescription": "string",
+                    "retroactivityDate": "AAAA-MM-DD",
+                    "retroactivityPeriod": "string",
+                    "retroactivityTimeUnit": "DIA",
+                    "retroactivityWorkingDaysIndex": "DIAS_UTEIS",
+                    "complementaryTermStartDate": "AAAA-MM-DD",
+                    "complementaryTermEndDate": "AAAA-MM-DD",
+                    "complementaryTerm": "string",
+                    "complementaryTermTimeUnit": "DIA",
+                    "complementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "supplementaryTermStartDate": "AAAA-MM-DD",
+                    "supplementaryTermEndDate": "AAAA-MM-DD",
+                    "supplementaryTerm": "string",
+                    "supplementaryTermTimeUnit": "DIA",
+                    "supplementaryTermWorkingDaysIndex": "DIAS_UTEIS",
+                    "lawyerRecommendation": "ESCOLHIDO_PELO_SEGURADO",
+                    "lawyerRecommendationDescription": "string"
+                }
+            ],
             "insuredObjects": [
                 {
                     "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
+                    "hasComplementaryContract": true,
+                    "complementaryContractAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesMaxAmount": {
+                        "amount": 2000,
+                        "currency": "BRL"
+                    },
+                    "coveragesTermStartDate": "AAAA-MM-DD",
+                    "coveragesTermEndDate": "AAAA-MM-DD",
+                    "coveragesTerm": 100,
+                    "coveragesUnit": "DIA",
+                    "coveragesWorkingDaysIndex": "DIAS_UTEIS",
+                    "hasTransportationPollutionDamage": true,
+                    "hasThirdPatyDamage": true,
+                    "professionalClass": "ADMINISTRADOR_IMOBILIARIO",
+                    "hasRetroactivityApplication": true
                 }
             ]
         }
@@ -580,7 +584,7 @@ exports.getResponsibilityClaim = (req, res, next) => {
 exports.getResponsibilityPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = responsibilityPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityPolicyInfoData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
@@ -588,7 +592,7 @@ exports.getResponsibilityPolicyInfo = (req, res, next) => {
 exports.getResponsibilityPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = responsibilityPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityPremiumData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

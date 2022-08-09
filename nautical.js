@@ -56,7 +56,7 @@ const nauticalPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -93,7 +93,7 @@ const nauticalPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -130,7 +130,7 @@ const nauticalPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -179,7 +179,7 @@ const nauticalClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -205,7 +205,7 @@ const nauticalClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -231,7 +231,7 @@ const nauticalClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
@@ -244,6 +244,7 @@ const nauticalPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -323,7 +324,7 @@ const nauticalPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "BASICA",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -349,7 +350,7 @@ const nauticalPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -386,23 +387,12 @@ const nauticalPolicyInfoData = [
                 "identification": "string",
                 "cededPercentage": 10
             }
-        ],
-        "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
-            "insuredObjects": [
-                {
-                    "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
-                }
-            ]
-        }
+        ]
     },
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -482,7 +472,7 @@ const nauticalPolicyInfoData = [
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "BASICA",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -508,7 +498,7 @@ const nauticalPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "BASICA",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -545,19 +535,7 @@ const nauticalPolicyInfoData = [
                 "identification": "string",
                 "cededPercentage": 10
             }
-        ],
-        "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
-            "insuredObjects": [
-                {
-                    "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
-                }
-            ]
-        }
+        ]
     }
 ]
 
@@ -580,7 +558,7 @@ exports.getNauticalClaim = (req, res, next) => {
 exports.getNauticalPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = nauticalPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = nauticalPolicyInfoData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
@@ -588,7 +566,7 @@ exports.getNauticalPolicyInfo = (req, res, next) => {
 exports.getNauticalPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = nauticalPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = nauticalPremiumData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };

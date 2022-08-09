@@ -56,7 +56,7 @@ const autoPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -93,7 +93,7 @@ const autoPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -130,7 +130,7 @@ const autoPremiumData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "premiumAmount": {
                     "amount": 2000,
@@ -179,12 +179,20 @@ const autoClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "covenantNumber": "string",
+            "occurrenceCause": "ROUBO_OU_FURTO",
+            "driverAtOccurrenceSex": "MASCULINO",
+            "driverAtOccurrenceBirthDate": "AAAA-MM-DD",
+            "occurrenceCountry": "BRA",
+            "occurrencePostCode": "10000000"
+        }
     },
     {
         "cpf": "02188705076",
@@ -205,12 +213,20 @@ const autoClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "covenantNumber": "string",
+            "occurrenceCause": "ROUBO_OU_FURTO",
+            "driverAtOccurrenceSex": "MASCULINO",
+            "driverAtOccurrenceBirthDate": "AAAA-MM-DD",
+            "occurrenceCountry": "BRA",
+            "occurrencePostCode": "10000000"
+        }
     },
     {
         "cpf": "15387180065",
@@ -231,12 +247,20 @@ const autoClaimData = [
             {
                 "insuredObjectId": "string",
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "warningDate": "2022-05-01",
                 "thirdPartyClaimDate": "2022-05-01"
             }
-        ]
+        ],
+        "branchInfo": {
+            "covenantNumber": "string",
+            "occurrenceCause": "ROUBO_OU_FURTO",
+            "driverAtOccurrenceSex": "MASCULINO",
+            "driverAtOccurrenceBirthDate": "AAAA-MM-DD",
+            "occurrenceCountry": "BRA",
+            "occurrencePostCode": "10000000"
+        }
     }
 ]
 
@@ -244,6 +268,7 @@ const autoPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -316,14 +341,20 @@ const autoPolicyInfoData = [
                 "type": "CONTRATO",
                 "typeAdditionalInfo": "string",
                 "description": "string",
-                "amount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                },
+                "hasExactVehicleIdentification": true,
+                "modality": "VALOR_DE_MERCADO_REFERENCIADO",
+                "amountReferenceTable": "MOLICAR",
+                "model": "string",
+                "year": "6206",
+                "fareCategory": "10",
+                "riskPostCode": "10000000",
+                "vehicleUsage": "LAZER",
+                "frequentDestinationPostCode": "10000000",
+                "overnightPostCode": "10000000",
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "CASCO_COMPREENSIVA",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -331,7 +362,6 @@ const autoPolicyInfoData = [
                             "amount": 2000,
                             "currency": "BRL"
                         },
-                        "isLMISublimit": true,
                         "termStartDate": "AAAA-MM-DD",
                         "termEndDate": "AAAA-MM-DD",
                         "isMainCoverage": true,
@@ -341,7 +371,17 @@ const autoPolicyInfoData = [
                         "gracePeriodicity": "DIA",
                         "gracePeriodCountingMethod": "DIAS_UTEIS",
                         "gracePeriodStartDate": "AAAA-MM-DD",
-                        "gracePeriodEndDate": "AAAA-MM-DD"
+                        "gracePeriodEndDate": "AAAA-MM-DD",
+                        "adjustmentRate": 10,
+                        "premiumAmount": {
+                            "amount": 2000,
+                            "currency": "BRL"
+                        },
+                        "compensationType": "PARCIAL",
+                        "partialCompensationPercentage": 10,
+                        "percentageOverLMI": 10,
+                        "daysForTotalCompensation": 0,
+                        "boundCoverage": "VEICULO"
                     }
                 ]
             }
@@ -349,7 +389,7 @@ const autoPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -387,22 +427,30 @@ const autoPolicyInfoData = [
                 "cededPercentage": 10
             }
         ],
-        "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
-            "insuredObjects": [
-                {
-                    "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
-                }
-            ]
-        }
+        "repairNetwork": "REDE_REFERENCIADA",
+        "repairedPartsUsageType": "NOVA_E_USADA",
+        "repairedPartsClassification": "ORIGINAL_E_COMPATIVEL",
+        "repairedPartsNationality": "NACIONAL_E_IMPORTADA",
+        "validityType": "SEMESTRAL_INTERMITENTE",
+        "otherCompensations": "string",
+        "otherBenefits": "DESCONTOS",
+        "assistancePackages": "ATE_DEZ_SERVICOS",
+        "isExpiredRiskPolicy": true,
+        "bonusDiscountRate": 0,
+        "bonusClass": "string",
+        "drivers": [
+            {
+                "identification": "12345678900",
+                "sex": "MASCULINO",
+                "birthDate": "AAAA-MM-DD",
+                "licensedExperience": 4
+            }
+        ]
     },
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
+        "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -475,14 +523,20 @@ const autoPolicyInfoData = [
                 "type": "CONTRATO",
                 "typeAdditionalInfo": "string",
                 "description": "string",
-                "amount": {
-                    "amount": 2000,
-                    "currency": "BRL"
-                },
+                "hasExactVehicleIdentification": true,
+                "modality": "VALOR_DE_MERCADO_REFERENCIADO",
+                "amountReferenceTable": "MOLICAR",
+                "model": "string",
+                "year": "6206",
+                "fareCategory": "10",
+                "riskPostCode": "10000000",
+                "vehicleUsage": "LAZER",
+                "frequentDestinationPostCode": "10000000",
+                "overnightPostCode": "10000000",
                 "coverages": [
                     {
                         "branch": "111",
-                        "code": "LUCRO_BRUTO",
+                        "code": "CASCO_COMPREENSIVA",
                         "description": "string",
                         "internalCode": "string",
                         "susepProcessNumber": "string",
@@ -490,7 +544,6 @@ const autoPolicyInfoData = [
                             "amount": 2000,
                             "currency": "BRL"
                         },
-                        "isLMISublimit": true,
                         "termStartDate": "AAAA-MM-DD",
                         "termEndDate": "AAAA-MM-DD",
                         "isMainCoverage": true,
@@ -500,7 +553,17 @@ const autoPolicyInfoData = [
                         "gracePeriodicity": "DIA",
                         "gracePeriodCountingMethod": "DIAS_UTEIS",
                         "gracePeriodStartDate": "AAAA-MM-DD",
-                        "gracePeriodEndDate": "AAAA-MM-DD"
+                        "gracePeriodEndDate": "AAAA-MM-DD",
+                        "adjustmentRate": 10,
+                        "premiumAmount": {
+                            "amount": 2000,
+                            "currency": "BRL"
+                        },
+                        "compensationType": "PARCIAL",
+                        "partialCompensationPercentage": 10,
+                        "percentageOverLMI": 10,
+                        "daysForTotalCompensation": 0,
+                        "boundCoverage": "VEICULO"
                     }
                 ]
             }
@@ -508,7 +571,7 @@ const autoPolicyInfoData = [
         "coverages": [
             {
                 "branch": "111",
-                "code": "LUCRO_BRUTO",
+                "code": "CASCO_COMPREENSIVA",
                 "description": "string",
                 "deductible": {
                     "type": "DEDUTIVEL",
@@ -546,18 +609,25 @@ const autoPolicyInfoData = [
                 "cededPercentage": 10
             }
         ],
-        "branchInfo": {
-            "basicCoverageIndex": "SIMPLES",
-            "insuredObjects": [
-                {
-                    "identification": "string",
-                    "propertyType": "CASA",
-                    "structuringType": "CONDOMINIO_VERTICAL",
-                    "postCode": "10000000",
-                    "businessActivity": "1234567"
-                }
-            ]
-        }
+        "repairNetwork": "REDE_REFERENCIADA",
+        "repairedPartsUsageType": "NOVA_E_USADA",
+        "repairedPartsClassification": "ORIGINAL_E_COMPATIVEL",
+        "repairedPartsNationality": "NACIONAL_E_IMPORTADA",
+        "validityType": "SEMESTRAL_INTERMITENTE",
+        "otherCompensations": "string",
+        "otherBenefits": "DESCONTOS",
+        "assistancePackages": "ATE_DEZ_SERVICOS",
+        "isExpiredRiskPolicy": true,
+        "bonusDiscountRate": 0,
+        "bonusClass": "string",
+        "drivers": [
+            {
+                "identification": "12345678900",
+                "sex": "MASCULINO",
+                "birthDate": "AAAA-MM-DD",
+                "licensedExperience": 4
+            }
+        ]
     }
 ]
 
@@ -580,7 +650,7 @@ exports.getAutoClaim = (req, res, next) => {
 exports.getAutoPolicyInfo = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = autoPolicyInfoData.filter(item => item.cpf === cpf)
+    const filteredData = autoPolicyInfoData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
@@ -588,7 +658,7 @@ exports.getAutoPolicyInfo = (req, res, next) => {
 exports.getAutoPremium = (req, res, next) => {
     const { cpf } = req.params
 
-    const filteredData = autoPremiumData.filter(item => item.cpf === cpf)
+    const filteredData = autoPremiumData.find(item => item.cpf === cpf)
 
     res.json(filteredData)
 };
