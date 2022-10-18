@@ -47,7 +47,7 @@ const patrimonialData = [
 
 const patrimonialPremiumData = [
     {
-        "cpf": "85711574051",
+        "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
         "paymentsQuantity": 4,
         "amount": {
             "amount": 2000,
@@ -121,7 +121,7 @@ const patrimonialPremiumData = [
         ]
     },
     {
-        "cpf": "02188705076",
+        "cpf": "urn:mapfre:7f1fb742-f5d0-41aa-894a-34b2fc7e9c16",
         "paymentsQuantity": 4,
         "amount": {
             "amount": 2000,
@@ -161,7 +161,7 @@ const patrimonialPremiumData = [
 
 const patrimonialClaimData = [
     {
-        "cpf": "85711574051",
+        "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
         "status": "ABERTO",
@@ -213,7 +213,7 @@ const patrimonialClaimData = [
         ]
     },
     {
-        "cpf": "15387180065",
+        "cpf": "urn:mapfre:7f1fb742-f5d0-41aa-894a-34b2fc7e9c16",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
         "status": "ABERTO",
@@ -243,7 +243,7 @@ const patrimonialClaimData = [
 const patrimonialPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
-        "cpf": "85711574051",
+        "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
         "policyId": "111111",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
