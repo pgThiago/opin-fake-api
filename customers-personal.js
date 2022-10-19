@@ -39,7 +39,7 @@ const qualification = [
       incomeFrequency: "MENSAL",
       currency: "BRL",
       amount: 100000.04,
-      year: "2010",
+      date: "2012-05-21",
     },
     informedPatrimony: {
       currency: "BRL",
