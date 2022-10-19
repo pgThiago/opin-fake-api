@@ -1,6 +1,7 @@
 const responsibilityData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const responsibilityData = [
 
 const responsibilityPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -87,6 +89,7 @@ const responsibilityPremiumData = [
 
 const responsibilityClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -169,7 +172,7 @@ const responsibilityClaimData = [
 const responsibilityPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -367,7 +370,7 @@ const responsibilityPolicyInfoData = [
     },
     {
         "documentType": "APOLICE_INDIVIDUAL",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "02188705076",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
@@ -566,33 +569,33 @@ const responsibilityPolicyInfoData = [
 ]
 
 exports.getResponsibility = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = responsibilityData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getResponsibilityClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = responsibilityClaimData.filter(item => item.cpf === cpf)
+    const filteredData = responsibilityClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getResponsibilityPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = responsibilityPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = responsibilityPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getResponsibilityPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = responsibilityPremiumData.find(item => item.cpf === cpf)
+    const filteredData = responsibilityPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

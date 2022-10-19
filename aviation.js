@@ -1,6 +1,7 @@
 const aviationData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const aviationData = [
 
 const aviationPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const aviationPremiumData = [
 
 const aviationClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -244,7 +247,7 @@ const aviationPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -392,7 +395,7 @@ const aviationPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -540,33 +543,33 @@ const aviationPolicyInfoData = [
 ]
 
 exports.getAviation = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = aviationData.filter(item => item.cpf === cpf)
+    const filteredData = aviationData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAviationClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = aviationClaimData.filter(item => item.cpf === cpf)
+    const filteredData = aviationClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAviationPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = aviationPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = aviationPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAviationPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = aviationPremiumData.find(item => item.cpf === cpf)
+    const filteredData = aviationPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

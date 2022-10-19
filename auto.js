@@ -1,6 +1,7 @@
 const autoData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const autoData = [
 
 const autoPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const autoPremiumData = [
 
 const autoClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -268,7 +271,7 @@ const autoPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -450,7 +453,7 @@ const autoPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -632,33 +635,33 @@ const autoPolicyInfoData = [
 ]
 
 exports.getAuto = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = autoData.filter(item => item.cpf === cpf)
+    const filteredData = autoData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAutoClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = autoClaimData.filter(item => item.cpf === cpf)
+    const filteredData = autoClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAutoPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = autoPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = autoPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getAutoPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = autoPremiumData.find(item => item.cpf === cpf)
+    const filteredData = autoPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

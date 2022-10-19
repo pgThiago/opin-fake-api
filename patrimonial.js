@@ -1,6 +1,7 @@
 const patrimonialData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const patrimonialData = [
 
 const patrimonialPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const patrimonialPremiumData = [
 
 const patrimonialClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -244,7 +247,7 @@ const patrimonialPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "urn:mapfre:b231567f-94e8-4cb1-8fca-d62c5d98abe9",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -404,7 +407,7 @@ const patrimonialPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -564,33 +567,33 @@ const patrimonialPolicyInfoData = [
 ]
 
 exports.getPatrimonial = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = patrimonialData.filter(item => item.cpf === cpf)
+    const filteredData = patrimonialData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getPatrimonialClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = patrimonialClaimData.filter(item => item.cpf === cpf)
+    const filteredData = patrimonialClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getPatrimonialPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = patrimonialPolicyInfoData.find(item => item.cpf === cpf)
-
+    const filteredData = patrimonialPolicyInfoData.find(item => item.policyId === policyId)
+    
     res.json(filteredData)
 };
 
 exports.getPatrimonialPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = patrimonialPremiumData.find(item => item.cpf === cpf)
+    const filteredData = patrimonialPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
