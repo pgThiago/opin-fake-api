@@ -1,6 +1,7 @@
 const finacialRiskData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const finacialRiskData = [
 
 const finacialRiskPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const finacialRiskPremiumData = [
 
 const finacialRiskClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -244,7 +247,7 @@ const finacialRiskPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -396,7 +399,7 @@ const finacialRiskPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -548,33 +551,33 @@ const finacialRiskPolicyInfoData = [
 ]
 
 exports.getfinancialRisk = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = finacialRiskData.filter(item => item.cpf === cpf)
+    const filteredData = finacialRiskData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getfinancialRiskClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = finacialRiskClaimData.filter(item => item.cpf === cpf)
+    const filteredData = finacialRiskClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getfinancialRiskPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = finacialRiskPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = finacialRiskPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getfinancialRiskPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = finacialRiskPremiumData.find(item => item.cpf === cpf)
+    const filteredData = finacialRiskPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

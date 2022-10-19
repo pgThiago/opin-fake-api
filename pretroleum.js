@@ -1,6 +1,7 @@
 const petroleumData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const petroleumData = [
 
 const petroleumPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const petroleumPremiumData = [
 
 const petroleumClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -244,7 +247,7 @@ const petroleumPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -392,7 +395,7 @@ const petroleumPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -540,33 +543,33 @@ const petroleumPolicyInfoData = [
 ]
 
 exports.getPetroleum = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = petroleumData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getPetroleumClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = petroleumClaimData.filter(item => item.cpf === cpf)
+    const filteredData = petroleumClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getPetroleumPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = petroleumPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = petroleumPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getPetroleumPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = petroleumPremiumData.find(item => item.cpf === cpf)
+    const filteredData = petroleumPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

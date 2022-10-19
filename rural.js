@@ -1,6 +1,7 @@
 const ruralData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const ruralData = [
 
 const ruralPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const ruralPremiumData = [
 
 const ruralClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -274,7 +277,7 @@ const ruralPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -452,7 +455,7 @@ const ruralPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -630,33 +633,33 @@ const ruralPolicyInfoData = [
 ]
 
 exports.getRural = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = ruralData.filter(item => item.cpf === cpf)
+    const filteredData = ruralData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getRuralClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = ruralClaimData.filter(item => item.cpf === cpf)
+    const filteredData = ruralClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getRuralPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = ruralPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = ruralPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getRuralPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = ruralPremiumData.find(item => item.cpf === cpf)
+    const filteredData = ruralPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };

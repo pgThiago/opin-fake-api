@@ -1,6 +1,7 @@
 const nauticalData = [
     {
         "cpf": "85711574051",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "brand": "MAPFRE",
         "companies": [
             {
@@ -47,6 +48,7 @@ const nauticalData = [
 
 const nauticalPremiumData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "paymentsQuantity": 4,
         "amount": {
@@ -161,6 +163,7 @@ const nauticalPremiumData = [
 
 const nauticalClaimData = [
     {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "cpf": "85711574051",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
@@ -244,7 +247,7 @@ const nauticalPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "85711574051",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -392,7 +395,7 @@ const nauticalPolicyInfoData = [
     {
         "documentType": "APOLICE_INDIVIDUAL",
         "cpf": "02188705076",
-        "policyId": "111111",
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
         "susepProcessNumber": "string",
         "groupCertificateId": "string",
         "issuanceType": "EMISSAO_PROPRIA",
@@ -540,33 +543,33 @@ const nauticalPolicyInfoData = [
 ]
 
 exports.getNautical = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = nauticalData.filter(item => item.cpf === cpf)
+    const filteredData = nauticalData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getNauticalClaim = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = nauticalClaimData.filter(item => item.cpf === cpf)
+    const filteredData = nauticalClaimData.filter(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getNauticalPolicyInfo = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = nauticalPolicyInfoData.find(item => item.cpf === cpf)
+    const filteredData = nauticalPolicyInfoData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
 
 exports.getNauticalPremium = (req, res, next) => {
-    const { cpf } = req.params
+    const { policyId } = req.params
 
-    const filteredData = nauticalPremiumData.find(item => item.cpf === cpf)
+    const filteredData = nauticalPremiumData.find(item => item.policyId === policyId)
 
     res.json(filteredData)
 };
