@@ -122,7 +122,10 @@ exports.getPersonalIdentification = (req, res, next) => {
 
   const filteredData = identification
     .filter((item) => item.cpf === cpf)
-    .map((i) => delete i.cpf);
+    .map((i) => {
+      delete i.cpf;
+      return i;
+    });
 
   res.json(filteredData);
 };
@@ -132,7 +135,10 @@ exports.getPersonalQualification = (req, res, next) => {
 
   const filteredData = qualification
     .filter((item) => item.cpf === cpf)
-    .map((i) => delete i.cpf);
+    .map((i) => {
+      delete i.cpf;
+      return i;
+    });
 
   res.json(filteredData);
 };
@@ -142,7 +148,10 @@ exports.getPersonalComplimentaryInfo = (req, res, next) => {
 
   const filteredData = complimentaryInfo
     .find((item) => item.cpf === cpf)
-    .map((i) => delete i.cpf);
+    .map((i) => {
+      delete i.cpf;
+      return i;
+    });
 
   res.json(filteredData);
 };
