@@ -138,12 +138,9 @@ exports.getBusinessQualification = (req, res, next) => {
 exports.getBusinessComplimentaryInfo = (req, res, next) => {
   const { cnpj } = req.params;
 
-  const filteredData = complimentaryInfo
-    .find((item) => item.cnpj === cnpj)
-    .map((i) => {
-      delete i.cnpj;
-      return i;
-    });
+  const filteredData = complimentaryInfo.find((item) => item.cnpj === cnpj);
+
+  if (filteredData) delete filteredData.cnpj;
 
   res.json(filteredData);
 };

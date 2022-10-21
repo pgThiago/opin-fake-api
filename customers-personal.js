@@ -146,12 +146,8 @@ exports.getPersonalQualification = (req, res, next) => {
 exports.getPersonalComplimentaryInfo = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = complimentaryInfo
-    .find((item) => item.cpf === cpf)
-    .map((i) => {
-      delete i.cpf;
-      return i;
-    });
+  const filteredData = complimentaryInfo.find((item) => item.cpf === cpf);
+  if (filteredData) delete filteredData.cpf;
 
   res.json(filteredData);
 };
