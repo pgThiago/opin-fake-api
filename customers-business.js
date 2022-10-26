@@ -115,8 +115,8 @@ exports.getBusinessIdentification = (req, res, next) => {
   const filteredData = identification
     .filter((item) => item.cnpj === cnpj)
     .map((i) => {
-      delete i.cnpj;
-      return i;
+      const { cnpj, ...rest } = i;
+      return rest;
     });
 
   res.json(filteredData);
@@ -128,8 +128,8 @@ exports.getBusinessQualification = (req, res, next) => {
   const filteredData = qualification
     .filter((item) => item.cnpj === cnpj)
     .map((i) => {
-      delete i.cnpj;
-      return i;
+      const { cnpj, ...rest } = i;
+      return rest;
     });
 
   res.json(filteredData);
@@ -138,9 +138,12 @@ exports.getBusinessQualification = (req, res, next) => {
 exports.getBusinessComplimentaryInfo = (req, res, next) => {
   const { cnpj } = req.params;
 
-  const filteredData = complimentaryInfo.find((item) => item.cnpj === cnpj);
+  let filteredData = complimentaryInfo.find((item) => item.cnpj === cnpj);
 
-  if (filteredData) delete filteredData.cnpj;
+  if (filteredData) {
+    const { cnpj, ...rest } = filteredData;
+    res.json(rest);
+  }
 
-  res.json(filteredData);
+  res.json();
 };

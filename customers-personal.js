@@ -123,8 +123,8 @@ exports.getPersonalIdentification = (req, res, next) => {
   const filteredData = identification
     .filter((item) => item.cpf === cpf)
     .map((i) => {
-      delete i.cpf;
-      return i;
+      const { cpf, ...rest } = i;
+      return rest;
     });
 
   res.json(filteredData);
@@ -136,8 +136,8 @@ exports.getPersonalQualification = (req, res, next) => {
   const filteredData = qualification
     .filter((item) => item.cpf === cpf)
     .map((i) => {
-      delete i.cpf;
-      return i;
+      const { cpf, ...rest } = i;
+      return rest;
     });
 
   res.json(filteredData);
@@ -146,8 +146,11 @@ exports.getPersonalQualification = (req, res, next) => {
 exports.getPersonalComplimentaryInfo = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = complimentaryInfo.find((item) => item.cpf === cpf);
-  if (filteredData) delete filteredData.cpf;
+  let filteredData = complimentaryInfo.find((item) => item.cpf === cpf);
+  if (filteredData) {
+    const { cpf, ...rest } = filteredData;
+    res.json(rest);
+  }
 
-  res.json(filteredData);
+  res.json();
 };
