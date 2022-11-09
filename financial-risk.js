@@ -709,6 +709,9 @@ exports.getfinancialRiskClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -719,6 +722,9 @@ exports.getfinancialRiskPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -728,6 +734,9 @@ exports.getfinancialRiskPremium = (req, res, next) => {
   const filteredData = finacialRiskPremiumData.find(
     (item) => item.policyId === policyId
   );
+
+  delete filteredData.cpf
+  delete filteredData.policyId
 
   res.json(filteredData);
 };

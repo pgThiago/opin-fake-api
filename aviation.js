@@ -697,6 +697,9 @@ exports.getAviationClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -707,6 +710,9 @@ exports.getAviationPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -716,6 +722,9 @@ exports.getAviationPremium = (req, res, next) => {
   const filteredData = aviationPremiumData.find(
     (item) => item.policyId === policyId
   );
+
+  delete filteredData.cpf
+  delete filteredData.policyId
 
   res.json(filteredData);
 };

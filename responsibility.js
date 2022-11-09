@@ -850,6 +850,9 @@ exports.getResponsibilityClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -860,6 +863,9 @@ exports.getResponsibilityPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -869,6 +875,9 @@ exports.getResponsibilityPremium = (req, res, next) => {
   const filteredData = responsibilityPremiumData.find(
     (item) => item.policyId === policyId
   );
+
+  delete filteredData.cpf
+  delete filteredData.policyId
 
   res.json(filteredData);
 };

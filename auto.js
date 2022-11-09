@@ -823,6 +823,9 @@ exports.getAutoClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -833,6 +836,9 @@ exports.getAutoPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -842,6 +848,9 @@ exports.getAutoPremium = (req, res, next) => {
   const filteredData = autoPremiumData.find(
     (item) => item.policyId === policyId
   );
+
+  delete filteredData.cpf
+  delete filteredData.policyId
 
   res.json(filteredData);
 };

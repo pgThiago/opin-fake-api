@@ -697,6 +697,9 @@ exports.getPetroleumClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -707,6 +710,9 @@ exports.getPetroleumPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
+  delete filteredData.cpf
+  delete filteredData.policyId
+
   res.json(filteredData);
 };
 
@@ -716,6 +722,9 @@ exports.getPetroleumPremium = (req, res, next) => {
   const filteredData = petroleumPremiumData.find(
     (item) => item.policyId === policyId
   );
+
+  delete filteredData.cpf
+  delete filteredData.policyId
 
   res.json(filteredData);
 };
