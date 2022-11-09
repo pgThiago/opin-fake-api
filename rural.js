@@ -818,8 +818,10 @@ exports.getRuralClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -831,8 +833,10 @@ exports.getRuralPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -844,8 +848,10 @@ exports.getRuralPremium = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };

@@ -850,8 +850,10 @@ exports.getResponsibilityClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -863,8 +865,10 @@ exports.getResponsibilityPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -876,8 +880,10 @@ exports.getResponsibilityPremium = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };

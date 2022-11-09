@@ -823,8 +823,10 @@ exports.getAutoClaim = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -836,8 +838,10 @@ exports.getAutoPolicyInfo = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
@@ -849,8 +853,10 @@ exports.getAutoPremium = (req, res, next) => {
     (item) => item.policyId === policyId
   );
 
-  delete filteredData.cpf
-  delete filteredData.policyId
+  if (filteredData) {
+    delete filteredData.cpf
+    delete filteredData.policyId
+  }
 
   res.json(filteredData);
 };
