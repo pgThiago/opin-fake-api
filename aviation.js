@@ -685,7 +685,11 @@ const aviationPolicyInfoData = [
 exports.getAviation = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = aviationData.filter((item) => item.cpf === cpf);
+  const filteredData = aviationData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -693,14 +697,11 @@ exports.getAviation = (req, res, next) => {
 exports.getAviationClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = aviationClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = aviationClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -713,11 +714,11 @@ exports.getAviationPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getAviationPremium = (req, res, next) => {
@@ -728,9 +729,9 @@ exports.getAviationPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };

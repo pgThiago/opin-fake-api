@@ -806,7 +806,11 @@ const ruralPolicyInfoData = [
 exports.getRural = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = ruralData.filter((item) => item.cpf === cpf);
+  const filteredData = ruralData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -814,14 +818,11 @@ exports.getRural = (req, res, next) => {
 exports.getRuralClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = ruralClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = ruralClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -834,11 +835,11 @@ exports.getRuralPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getRuralPremium = (req, res, next) => {
@@ -849,9 +850,9 @@ exports.getRuralPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };

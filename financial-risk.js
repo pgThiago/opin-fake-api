@@ -697,7 +697,11 @@ const finacialRiskPolicyInfoData = [
 exports.getfinancialRisk = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = finacialRiskData.filter((item) => item.cpf === cpf);
+  const filteredData = finacialRiskData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -705,14 +709,11 @@ exports.getfinancialRisk = (req, res, next) => {
 exports.getfinancialRiskClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = finacialRiskClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = finacialRiskClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -725,11 +726,11 @@ exports.getfinancialRiskPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getfinancialRiskPremium = (req, res, next) => {
@@ -740,9 +741,9 @@ exports.getfinancialRiskPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };

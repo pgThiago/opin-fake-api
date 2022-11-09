@@ -838,7 +838,11 @@ const responsibilityPolicyInfoData = [
 exports.getResponsibility = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = responsibilityData.filter((item) => item.cpf === cpf);
+  const filteredData = responsibilityData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -846,14 +850,11 @@ exports.getResponsibility = (req, res, next) => {
 exports.getResponsibilityClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = responsibilityClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = responsibilityClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -866,11 +867,11 @@ exports.getResponsibilityPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getResponsibilityPremium = (req, res, next) => {
@@ -881,9 +882,9 @@ exports.getResponsibilityPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };

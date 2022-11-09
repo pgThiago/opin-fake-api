@@ -722,7 +722,11 @@ const patrimonialPolicyInfoData = [
 exports.getPatrimonial = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = patrimonialData.filter((item) => item.cpf === cpf);
+  const filteredData = patrimonialData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -730,14 +734,11 @@ exports.getPatrimonial = (req, res, next) => {
 exports.getPatrimonialClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = patrimonialClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = patrimonialClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -750,11 +751,11 @@ exports.getPatrimonialPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getPatrimonialPremium = (req, res, next) => {
@@ -765,9 +766,9 @@ exports.getPatrimonialPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };

@@ -685,7 +685,11 @@ const petroleumPolicyInfoData = [
 exports.getPetroleum = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = petroleumData.filter((item) => item.cpf === cpf);
+  const filteredData = petroleumData.filter((item) => item.cpf === cpf)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -693,14 +697,11 @@ exports.getPetroleum = (req, res, next) => {
 exports.getPetroleumClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = petroleumClaimData.filter(
-    (item) => item.policyId === policyId
-  );
-
-  if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
-  }
+  const filteredData = petroleumClaimData.filter((item) => item.policyId === policyId)
+    .map((i) => {
+      const { cpf, policyId, ...rest } = i;
+      return rest;
+    });
 
   res.json(filteredData);
 };
@@ -713,11 +714,11 @@ exports.getPetroleumPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
 
 exports.getPetroleumPremium = (req, res, next) => {
@@ -728,9 +729,9 @@ exports.getPetroleumPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    delete filteredData.cpf
-    delete filteredData.policyId
+    const { cpf, policyId, ...rest } = filteredData;
+    res.json(rest);
   }
 
-  res.json(filteredData);
+  res.json();
 };
