@@ -697,9 +697,10 @@ const finacialRiskPolicyInfoData = [
 exports.getfinancialRisk = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = finacialRiskData.filter((item) => item.cpf === cpf)
+  const filteredData = finacialRiskData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -709,9 +710,10 @@ exports.getfinancialRisk = (req, res, next) => {
 exports.getfinancialRiskClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = finacialRiskClaimData.filter((item) => item.policyId === policyId)
+  const filteredData = finacialRiskClaimData
+    .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -726,7 +728,7 @@ exports.getfinancialRiskPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -741,7 +743,7 @@ exports.getfinancialRiskPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 

@@ -723,9 +723,10 @@ const patrimonialPolicyInfoData = [
 exports.getPatrimonial = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = patrimonialData.filter((item) => item.cpf === cpf)
+  const filteredData = patrimonialData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -735,9 +736,10 @@ exports.getPatrimonial = (req, res, next) => {
 exports.getPatrimonialClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = patrimonialClaimData.filter((item) => item.policyId === policyId)
+  const filteredData = patrimonialClaimData
+    .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -752,7 +754,7 @@ exports.getPatrimonialPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -767,7 +769,7 @@ exports.getPatrimonialPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 

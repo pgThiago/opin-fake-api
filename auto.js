@@ -811,9 +811,10 @@ const autoPolicyInfoData = [
 exports.getAuto = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = autoData.filter((item) => item.cpf === cpf)
+  const filteredData = autoData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -826,7 +827,7 @@ exports.getAutoClaim = (req, res, next) => {
   const filteredData = autoClaimData
     .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -841,7 +842,7 @@ exports.getAutoPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -856,7 +857,7 @@ exports.getAutoPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 

@@ -685,9 +685,10 @@ const aviationPolicyInfoData = [
 exports.getAviation = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = aviationData.filter((item) => item.cpf === cpf)
+  const filteredData = aviationData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -697,9 +698,10 @@ exports.getAviation = (req, res, next) => {
 exports.getAviationClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = aviationClaimData.filter((item) => item.policyId === policyId)
+  const filteredData = aviationClaimData
+    .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -714,7 +716,7 @@ exports.getAviationPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -729,7 +731,7 @@ exports.getAviationPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 

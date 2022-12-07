@@ -838,9 +838,10 @@ const responsibilityPolicyInfoData = [
 exports.getResponsibility = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = responsibilityData.filter((item) => item.cpf === cpf)
+  const filteredData = responsibilityData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -850,9 +851,10 @@ exports.getResponsibility = (req, res, next) => {
 exports.getResponsibilityClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = responsibilityClaimData.filter((item) => item.policyId === policyId)
+  const filteredData = responsibilityClaimData
+    .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -867,7 +869,7 @@ exports.getResponsibilityPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -882,7 +884,7 @@ exports.getResponsibilityPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 

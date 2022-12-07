@@ -686,9 +686,10 @@ const nauticalPolicyInfoData = [
 exports.getNautical = (req, res, next) => {
   const { cpf } = req.params;
 
-  const filteredData = nauticalData.filter((item) => item.cpf === cpf)
+  const filteredData = nauticalData
+    .filter((item) => item.cpf === cpf)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -698,9 +699,10 @@ exports.getNautical = (req, res, next) => {
 exports.getNauticalClaim = (req, res, next) => {
   const { policyId } = req.params;
 
-  const filteredData = nauticalClaimData.filter((item) => item.policyId === policyId)
+  const filteredData = nauticalClaimData
+    .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, policyId, ...rest } = i;
+      const { cpf, ...rest } = i;
       return rest;
     });
 
@@ -715,7 +717,7 @@ exports.getNauticalPolicyInfo = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
@@ -730,7 +732,7 @@ exports.getNauticalPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, policyId, ...rest } = filteredData;
+    const { cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
