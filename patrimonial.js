@@ -237,7 +237,7 @@ const patrimonialClaimData = [
 
 const patrimonialPolicyInfoData = [
   {
-    documentType: "APOLICE_INDIVIDUAL",
+    documentType: "COMPREENSIVO_RESIDENCIAL",
     cpf: "85711574051",
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     susepProcessNumber: "string",
