@@ -164,4 +164,13 @@ app.get("/personal/complimentary-information/:cpf", (req, res) =>
 
 app.get("/resources/:cpf", (req, res) => getResources(req, res));
 
+app.get("/transport/:cpf", (req, res) => getNautical(req, res));
+app.get("/transport/:policyId/premium", (req, res) =>
+  getNauticalPremium(req, res)
+);
+app.get("/transport/:policyId/policy-info", (req, res) =>
+  getNauticalPolicyInfo(req, res)
+);
+app.get("/transport/:policyId/claim", (req, res) => getNauticalClaim(req, res));
+
 app.listen(process.env.PORT || 80);
