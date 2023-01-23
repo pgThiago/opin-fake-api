@@ -63,6 +63,13 @@ const {
 
 const { getResources } = require("./resources");
 
+const {
+  getTransport,
+  getTransportClaim,
+  getTransportPolicyInfo,
+  getTransportPremium,
+} = require("./transport");
+
 app.use(cors());
 app.use(express.json());
 
@@ -163,5 +170,16 @@ app.get("/personal/complimentary-information/:cpf", (req, res) =>
 );
 
 app.get("/resources/:cpf", (req, res) => getResources(req, res));
+
+app.get("/transport/:cpf", (req, res) => getTransport(req, res));
+app.get("/transport/:policyId/premium", (req, res) =>
+  getTransportPremium(req, res)
+);
+app.get("/transport/:policyId/policy-info", (req, res) =>
+  getTransportPolicyInfo(req, res)
+);
+app.get("/transport/:policyId/claim", (req, res) =>
+  getTransportClaim(req, res)
+);
 
 app.listen(process.env.PORT || 80);
