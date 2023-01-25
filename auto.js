@@ -333,7 +333,7 @@ const autoPolicyInfoData = [
     insuredObjects: [
       {
         identification: "string",
-        type: "CONTRATO",
+        type: "AUTOMOVEL",
         typeAdditionalInfo: "string",
         description: "string",
         hasExactVehicleIdentification: true,
@@ -515,7 +515,7 @@ const autoPolicyInfoData = [
     insuredObjects: [
       {
         identification: "string",
-        type: "CONTRATO",
+        type: "AUTOMOVEL",
         typeAdditionalInfo: "string",
         description: "string",
         hasExactVehicleIdentification: true,
@@ -697,7 +697,7 @@ const autoPolicyInfoData = [
     insuredObjects: [
       {
         identification: "string",
-        type: "CONTRATO",
+        type: "AUTOMOVEL",
         typeAdditionalInfo: "string",
         description: "string",
         hasExactVehicleIdentification: true,
