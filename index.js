@@ -49,6 +49,12 @@ const {
   getRuralPolicyInfo,
   getRuralPremium,
 } = require("./rural");
+const {
+  getHousing,
+  getHousingClaim,
+  getHousingPolicyInfo,
+  getHousingPremium,
+} = require("./housing");
 
 const {
   getBusinessComplimentaryInfo,
@@ -181,5 +187,14 @@ app.get("/transport/:policyId/policy-info", (req, res) =>
 app.get("/transport/:policyId/claim", (req, res) =>
   getTransportClaim(req, res)
 );
+
+app.get("/housing/:cpf", (req, res) => getHousing(req, res));
+app.get("/housing/:policyId/premium", (req, res) =>
+  getHousingPremium(req, res)
+);
+app.get("/housing/:policyId/policy-info", (req, res) =>
+  getHousingPolicyInfo(req, res)
+);
+app.get("/housing/:policyId/claim", (req, res) => getHousingClaim(req, res));
 
 app.listen(process.env.PORT || 80);
