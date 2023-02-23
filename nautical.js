@@ -17,7 +17,7 @@ const nauticalData = [
       {
         companyName: "MAPFRE Nautical Mock",
         cnpjNumber: "12345678901234",
-        policies: ["e00dace0-104e-11ed-861d-0242ac120002"],
+        policies: ["22261a20-b7c1-4f86-9209-f7357746f661"],
       },
     ],
   },
@@ -75,7 +75,7 @@ const nauticalPremiumData = [
   },
   {
     cpf: "15387180065",
-    policyId: "e00dace0-104e-11ed-861d-0242ac120002",
+    policyId: "22261a20-b7c1-4f86-9209-f7357746f661",
     paymentsQuantity: 4,
     amount: {
       amount: 2000,
@@ -181,7 +181,7 @@ const nauticalClaimData = [
   },
   {
     cpf: "02188705076",
-    policyId: "e00dace0-104e-11ed-861d-0242ac120002",
+    policyId: "22261a20-b7c1-4f86-9209-f7357746f661",
     identification: "string",
     documentationDeliveryDate: "AAAA-MM-DD",
     status: "ABERTO",
@@ -387,7 +387,7 @@ const nauticalPolicyInfoData = [
   {
     documentType: "APOLICE_INDIVIDUAL",
     cpf: "02188705076",
-    policyId: "e00dace0-104e-11ed-861d-0242ac120002",
+    policyId: "22261a20-b7c1-4f86-9209-f7357746f661",
     susepProcessNumber: "string",
     groupCertificateId: "string",
     issuanceType: "EMISSAO_PROPRIA",
