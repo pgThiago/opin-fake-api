@@ -1798,7 +1798,7 @@ exports.getPatrimonialClaim = (req, res, next) => {
   const filteredData = patrimonialClaimData
     .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, ...rest } = i;
+      const { policyId, cpf, ...rest } = i;
       return rest;
     });
 
@@ -1828,7 +1828,7 @@ exports.getPatrimonialPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, ...rest } = filteredData;
+    const { policyId, cpf, ...rest } = filteredData;
     res.json(rest);
   }
 
