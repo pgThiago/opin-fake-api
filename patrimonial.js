@@ -51,8 +51,11 @@ const patrimonialPremiumData = [
     cpf: "85711574051",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     coverages: [
       {
@@ -60,8 +63,11 @@ const patrimonialPremiumData = [
         code: "LUCRO_BRUTO",
         description: "string",
         premiumAmount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
       },
     ],
@@ -72,8 +78,11 @@ const patrimonialPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -89,8 +98,11 @@ const patrimonialPremiumData = [
     policyId: "071641e8-1050-11ed-861d-0242ac120002",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     coverages: [
       {
@@ -98,8 +110,11 @@ const patrimonialPremiumData = [
         code: "LUCRO_BRUTO",
         description: "string",
         premiumAmount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
       },
     ],
@@ -110,8 +125,11 @@ const patrimonialPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -127,8 +145,11 @@ const patrimonialPremiumData = [
     cpf: "02188705076",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     coverages: [
       {
@@ -136,8 +157,11 @@ const patrimonialPremiumData = [
         code: "LUCRO_BRUTO",
         description: "string",
         premiumAmount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
       },
     ],
@@ -148,8 +172,11 @@ const patrimonialPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -174,8 +201,11 @@ const patrimonialClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -201,8 +231,11 @@ const patrimonialClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -228,8 +261,11 @@ const patrimonialClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -259,8 +295,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -317,8 +356,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -328,8 +370,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -355,8 +400,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -369,22 +417,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -412,8 +466,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -470,8 +527,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -481,8 +541,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -508,8 +571,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -522,22 +588,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -565,8 +637,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -623,8 +698,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -634,8 +712,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -661,8 +742,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -675,22 +759,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -718,8 +808,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -776,8 +869,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -787,8 +883,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -814,8 +913,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -828,22 +930,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -871,8 +979,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -929,8 +1040,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -940,8 +1054,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -967,8 +1084,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -981,22 +1101,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1024,8 +1150,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1082,8 +1211,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1093,8 +1225,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1120,8 +1255,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1134,22 +1272,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1177,8 +1321,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1235,8 +1382,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1246,8 +1396,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1273,8 +1426,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1287,22 +1443,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1330,8 +1492,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1388,8 +1553,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1399,8 +1567,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1426,8 +1597,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1440,22 +1614,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1483,8 +1663,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1541,8 +1724,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1552,8 +1738,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1579,8 +1768,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1593,22 +1785,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1636,8 +1834,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1694,8 +1895,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1705,8 +1909,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1732,8 +1939,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1746,22 +1956,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
@@ -1789,8 +2005,11 @@ const patrimonialPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
-      currency: "BRL",
+      amount: "2000.00",
+      unit: {
+        code: "R$",
+        description: "BRL",
+      },
     },
     proposalId: "string",
     insureds: [
@@ -1847,8 +2066,11 @@ const patrimonialPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
-          currency: "BRL",
+          amount: "2000.00",
+          unit: {
+            code: "R$",
+            description: "BRL",
+          },
         },
         coverages: [
           {
@@ -1858,8 +2080,11 @@ const patrimonialPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
-              currency: "BRL",
+              amount: "2000.00",
+              unit: {
+                code: "R$",
+                description: "BRL",
+              },
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -1885,8 +2110,11 @@ const patrimonialPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           period: 10,
           periodicity: "DIA",
@@ -1899,22 +2127,28 @@ const patrimonialPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
           maxValue: {
-            amount: 2000,
-            currency: "BRL",
+            amount: "2000.00",
+            unit: {
+              code: "R$",
+              description: "BRL",
+            },
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
