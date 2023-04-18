@@ -1,6 +1,6 @@
 const patrimonialData = [
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     brand: "MAPFRE",
     companies: [
       {
@@ -48,7 +48,7 @@ const patrimonialData = [
 const patrimonialPremiumData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     paymentsQuantity: 4,
     amount: {
       amount: "2000.00",
@@ -192,7 +192,7 @@ const patrimonialPremiumData = [
 const patrimonialClaimData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     identification: "string",
     documentationDeliveryDate: "AAAA-MM-DD",
     status: "ABERTO",

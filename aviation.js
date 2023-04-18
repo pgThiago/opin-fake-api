@@ -11,7 +11,7 @@ const aviationData = [
     ],
   },
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     brand: "MAPFRE",
     companies: [
       {
@@ -165,7 +165,7 @@ const aviationPremiumData = [
 const aviationClaimData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     identification: "string",
     documentationDeliveryDate: "AAAA-MM-DD",
     status: "ABERTO",
@@ -276,7 +276,7 @@ const aviationClaimData = [
 const aviationPolicyInfoData = [
   {
     documentType: "APOLICE_INDIVIDUAL",
-    cpf: "85711574051",
+    cpf: "02325899926",
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     susepProcessNumber: "string",
     groupCertificateId: "string",
@@ -293,7 +293,7 @@ const aviationPolicyInfoData = [
     proposalId: "string",
     insureds: [
       {
-        identification: "85711574051",
+        identification: "02325899926",
         identificationType: "CPF",
         name: "Nome Sobrenome",
         postCode: "10000000",
@@ -441,7 +441,7 @@ const aviationPolicyInfoData = [
     proposalId: "string",
     insureds: [
       {
-        identification: "85711574051",
+        identification: "02325899926",
         identificationType: "CPF",
         name: "Nome Sobrenome",
         postCode: "10000000",

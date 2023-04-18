@@ -1,6 +1,6 @@
 const petroleumData = [
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     brand: "MAPFRE",
     companies: [
       {
@@ -37,7 +37,7 @@ const petroleumData = [
 const petroleumPremiumData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     paymentsQuantity: 4,
     amount: {
       amount: 2000,
@@ -154,7 +154,7 @@ const petroleumPremiumData = [
 const petroleumClaimData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     identification: "string",
     documentationDeliveryDate: "AAAA-MM-DD",
     status: "ABERTO",
@@ -238,7 +238,7 @@ const petroleumClaimData = [
 const petroleumPolicyInfoData = [
   {
     documentType: "APOLICE_INDIVIDUAL",
-    cpf: "85711574051",
+    cpf: "02325899926",
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     susepProcessNumber: "string",
     groupCertificateId: "string",
@@ -255,7 +255,7 @@ const petroleumPolicyInfoData = [
     proposalId: "string",
     insureds: [
       {
-        identification: "85711574051",
+        identification: "02325899926",
         identificationType: "CPF",
         name: "Nome Sobrenome",
         postCode: "10000000",

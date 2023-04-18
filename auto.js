@@ -11,7 +11,7 @@ const autoData = [
     ],
   },
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     brand: "MAPFRE",
     companies: [
       {
@@ -86,7 +86,7 @@ const autoPremiumData = [
   },
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     paymentsQuantity: 4,
     amount: {
       amount: 2000,
@@ -238,7 +238,7 @@ const autoClaimData = [
   },
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     identification: "string",
     documentationDeliveryDate: "AAAA-MM-DD",
     status: "ABERTO",
@@ -363,7 +363,7 @@ const autoPolicyInfoData = [
     proposalId: "string",
     insureds: [
       {
-        identification: "85711574051",
+        identification: "02325899926",
         identificationType: "CPF",
         name: "Nome Sobrenome",
         postCode: "10000000",
@@ -528,7 +528,7 @@ const autoPolicyInfoData = [
   },
   {
     documentType: "APOLICE_INDIVIDUAL",
-    cpf: "85711574051",
+    cpf: "02325899926",
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     susepProcessNumber: "string",
     groupCertificateId: "string",
@@ -545,7 +545,7 @@ const autoPolicyInfoData = [
     proposalId: "string",
     insureds: [
       {
-        identification: "85711574051",
+        identification: "02325899926",
         identificationType: "CPF",
         name: "Nome Sobrenome",
         postCode: "10000000",

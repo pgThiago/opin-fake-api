@@ -1,6 +1,6 @@
 const responsibilityData = [
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     brand: "MAPFRE",
     companies: [
       {
@@ -15,7 +15,7 @@ const responsibilityData = [
 const responsibilityPremiumData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     paymentsQuantity: 4,
     amount: {
       amount: "2000.00",
@@ -65,7 +65,7 @@ const responsibilityPremiumData = [
 const responsibilityClaimData = [
   {
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    cpf: "85711574051",
+    cpf: "02325899926",
     identification: "string",
     documentationDeliveryDate: "2022-12-31",
     status: "ABERTO",
@@ -97,7 +97,7 @@ const responsibilityClaimData = [
 
 const responsibilityPolicyInfoData = [
   {
-    cpf: "85711574051",
+    cpf: "02325899926",
     policyId: "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     documentType: "APOLICE_INDIVIDUAL",
     susepProcessNumber: "string",
