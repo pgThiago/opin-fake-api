@@ -49,6 +49,12 @@ const {
   getRuralPolicyInfo,
   getRuralPremium,
 } = require("./rural");
+const {
+  getHousing,
+  getHousingClaim,
+  getHousingPolicyInfo,
+  getHousingPremium,
+} = require("./housing");
 
 const {
   getBusinessComplimentaryInfo,
