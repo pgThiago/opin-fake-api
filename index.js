@@ -42,6 +42,8 @@ const { getResources } = require('./resources')
 const { getTransport, getTransportClaim, getTransportPolicyInfo, getTransportPremium } = require('./transport')
 
 const { getPerson, getPersonClaim, getPersonPolicyInfo, getPersonMovements } = require('./person')
+const { getPensionContracts, getPensionContractsInfo, getPensionMovements, getPensionPortabilities, getPensionWithdrawals, getPensionClaim } = require('./pension')
+
 
 app.use(cors())
 app.use(express.json())
@@ -110,5 +112,14 @@ app.get('/person/:cpf', (req, res) => getPerson(req, res))
 app.get('/person/:policyId/movements', (req, res) => getPersonMovements(req, res))
 app.get('/person/:policyId/policy-info', (req, res) => getPersonPolicyInfo(req, res))
 app.get('/person/:policyId/claim', (req, res) => getPersonClaim(req, res))
+
+
+app.get('/pension/contracts/:cpf', (req, res) => getPensionContracts(req, res))
+app.get('/pension/:pensionIdentification/contract-info', (req, res) => getPensionContractsInfo(req, res))
+app.get('/pension/:pensionIdentification/movements', (req, res) => getPensionMovements(req, res))
+app.get('/pension/:pensionIdentification/portabilities', (req, res) => getPensionPortabilities(req, res))
+app.get('/pension/:pensionIdentification/withdrawals', (req, res) => getPensionWithdrawals(req, res))
+app.get('/pension/:pensionIdentification/claim', (req, res) => getPensionClaim(req, res))
+
 
 app.listen(process.env.PORT || 80)
