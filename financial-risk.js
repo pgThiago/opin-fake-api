@@ -41,7 +41,10 @@ const finacialRiskPremiumData = [
     paymentsQuantity: 4,
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     coverages: [
       {
@@ -50,7 +53,10 @@ const finacialRiskPremiumData = [
         description: "string",
         premiumAmount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
       },
     ],
@@ -62,7 +68,10 @@ const finacialRiskPremiumData = [
         movementPaymentsNumber: 0,
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -79,7 +88,10 @@ const finacialRiskPremiumData = [
     paymentsQuantity: 4,
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     coverages: [
       {
@@ -88,7 +100,10 @@ const finacialRiskPremiumData = [
         description: "string",
         premiumAmount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
       },
     ],
@@ -100,7 +115,10 @@ const finacialRiskPremiumData = [
         movementPaymentsNumber: 0,
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -117,7 +135,10 @@ const finacialRiskPremiumData = [
     paymentsQuantity: 4,
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     coverages: [
       {
@@ -126,7 +147,10 @@ const finacialRiskPremiumData = [
         description: "string",
         premiumAmount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
       },
     ],
@@ -138,7 +162,10 @@ const finacialRiskPremiumData = [
         movementPaymentsNumber: 0,
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         maturityDate: "AAAA-MM-DD",
         tellerId: "string",
@@ -164,7 +191,10 @@ const finacialRiskClaimData = [
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -191,7 +221,10 @@ const finacialRiskClaimData = [
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -218,7 +251,10 @@ const finacialRiskClaimData = [
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     denialJustification: "RISCO_EXCLUIDO",
     denialJustificationDescription: "string",
@@ -249,7 +285,10 @@ const finacialRiskPolicyInfoData = [
     leadInsurerPolicyId: "string",
     maxLMG: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     proposalId: "string",
     insureds: [
@@ -307,7 +346,10 @@ const finacialRiskPolicyInfoData = [
         description: "string",
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         coverages: [
           {
@@ -318,7 +360,10 @@ const finacialRiskPolicyInfoData = [
             susepProcessNumber: "string",
             LMI: {
               amount: "2000.00",
-              currency: "BRL",
+              unit: {
+                code: "R$",
+                description: "BRL"
+              }
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -345,7 +390,10 @@ const finacialRiskPolicyInfoData = [
           typeAdditionalInfo: "string",
           amount: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           period: 10,
           periodicity: "DIA",
@@ -359,27 +407,33 @@ const finacialRiskPolicyInfoData = [
           description: "Descrição de exemplo",
           minValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           maxValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
       identification: "string",
       userGroup: "string",
-      technicalSurplus: 10,
+      technicalSurplus: "10.00",
     },
   },
   {
@@ -396,7 +450,10 @@ const finacialRiskPolicyInfoData = [
     leadInsurerPolicyId: "string",
     maxLMG: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     proposalId: "string",
     insureds: [
@@ -460,7 +517,10 @@ const finacialRiskPolicyInfoData = [
         description: "string",
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         coverages: [
           {
@@ -471,7 +531,10 @@ const finacialRiskPolicyInfoData = [
             susepProcessNumber: "string",
             LMI: {
               amount: "2000.00",
-              currency: "BRL",
+              unit: {
+                code: "R$",
+                description: "BRL"
+              }
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -498,7 +561,10 @@ const finacialRiskPolicyInfoData = [
           typeAdditionalInfo: "string",
           amount: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           period: 10,
           periodicity: "DIA",
@@ -512,26 +578,32 @@ const finacialRiskPolicyInfoData = [
           description: "Descrição de exemplo",
           minValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           maxValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
       userGroup: "string",
-      technicalSurplus: 10,
+      technicalSurplus: "10.00",
     },
   },
   {
@@ -548,7 +620,10 @@ const finacialRiskPolicyInfoData = [
     leadInsurerPolicyId: "string",
     maxLMG: {
       amount: "2000.00",
-      currency: "BRL",
+      unit: {
+        code: "R$",
+        description: "BRL"
+      }
     },
     proposalId: "string",
     insureds: [
@@ -612,7 +687,10 @@ const finacialRiskPolicyInfoData = [
         description: "string",
         amount: {
           amount: "2000.00",
-          currency: "BRL",
+          unit: {
+            code: "R$",
+            description: "BRL"
+          }
         },
         coverages: [
           {
@@ -623,7 +701,10 @@ const finacialRiskPolicyInfoData = [
             susepProcessNumber: "string",
             LMI: {
               amount: "2000.00",
-              currency: "BRL",
+              unit: {
+                code: "R$",
+                description: "BRL"
+              }
             },
             isLMISublimit: true,
             termStartDate: "AAAA-MM-DD",
@@ -650,7 +731,10 @@ const finacialRiskPolicyInfoData = [
           typeAdditionalInfo: "string",
           amount: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           period: 10,
           periodicity: "DIA",
@@ -664,26 +748,32 @@ const finacialRiskPolicyInfoData = [
           description: "Descrição de exemplo",
           minValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
           maxValue: {
             amount: "2000.00",
-            currency: "BRL",
+            unit: {
+              code: "R$",
+              description: "BRL"
+            }
           },
-          percentage: 10,
+          percentage: "10.00",
         },
       },
     ],
-    coinsuranceRetainedPercentage: 10,
+    coinsuranceRetainedPercentage: "10.00",
     coinsurers: [
       {
         identification: "string",
-        cededPercentage: 10,
+        cededPercentage: "10.00",
       },
     ],
     branchInfo: {
       userGroup: "string",
-      technicalSurplus: 10,
+      technicalSurplus: "10.00",
     },
   },
 ];
