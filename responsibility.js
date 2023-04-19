@@ -333,7 +333,7 @@ exports.getResponsibilityClaim = (req, res, next) => {
   const filteredData = responsibilityClaimData
     .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, ...rest } = i;
+      const { cpf, policyId, ...rest } = i;
       return rest;
     });
 
