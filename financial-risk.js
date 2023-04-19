@@ -797,7 +797,7 @@ exports.getfinancialRiskClaim = (req, res, next) => {
   const filteredData = finacialRiskClaimData
     .filter((item) => item.policyId === policyId)
     .map((i) => {
-      const { cpf, ...rest } = i;
+      const { cpf, policyId, ...rest } = i;
       return rest;
     });
 
@@ -827,7 +827,7 @@ exports.getfinancialRiskPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, ...rest } = filteredData;
+    const { cpf, policyId, ...rest } = filteredData;
     res.json(rest);
   }
 
