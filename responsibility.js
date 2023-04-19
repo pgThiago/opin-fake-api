@@ -363,7 +363,7 @@ exports.getResponsibilityPremium = (req, res, next) => {
   );
 
   if (filteredData) {
-    const { cpf, ...rest } = filteredData;
+    const { cpf, policyId, ...rest } = filteredData;
     res.json(rest);
   }
 
