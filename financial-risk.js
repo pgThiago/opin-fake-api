@@ -40,7 +40,7 @@ const finacialRiskPremiumData = [
     cpf: "02325899926",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     coverages: [
@@ -49,7 +49,7 @@ const finacialRiskPremiumData = [
         code: "PROTECAO_DE_BENS",
         description: "string",
         premiumAmount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
       },
@@ -61,7 +61,7 @@ const finacialRiskPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         maturityDate: "AAAA-MM-DD",
@@ -78,7 +78,7 @@ const finacialRiskPremiumData = [
     policyId: "071641e8-1050-11ed-861d-0242ac120002",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     coverages: [
@@ -87,7 +87,7 @@ const finacialRiskPremiumData = [
         code: "PROTECAO_DE_BENS",
         description: "string",
         premiumAmount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
       },
@@ -99,7 +99,7 @@ const finacialRiskPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         maturityDate: "AAAA-MM-DD",
@@ -116,7 +116,7 @@ const finacialRiskPremiumData = [
     cpf: "02188705076",
     paymentsQuantity: 4,
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     coverages: [
@@ -125,7 +125,7 @@ const finacialRiskPremiumData = [
         code: "PROTECAO_DE_BENS",
         description: "string",
         premiumAmount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
       },
@@ -137,7 +137,7 @@ const finacialRiskPremiumData = [
         movementOrigin: "EMISSAO_DIRETA",
         movementPaymentsNumber: 0,
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         maturityDate: "AAAA-MM-DD",
@@ -163,7 +163,7 @@ const finacialRiskClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     denialJustification: "RISCO_EXCLUIDO",
@@ -190,7 +190,7 @@ const finacialRiskClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     denialJustification: "RISCO_EXCLUIDO",
@@ -217,7 +217,7 @@ const finacialRiskClaimData = [
     warningDate: "AAAA-MM-DD",
     thirdPartyClaimDate: "AAAA-MM-DD",
     amount: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     denialJustification: "RISCO_EXCLUIDO",
@@ -248,7 +248,7 @@ const finacialRiskPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     proposalId: "string",
@@ -306,7 +306,7 @@ const finacialRiskPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         coverages: [
@@ -317,7 +317,7 @@ const finacialRiskPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
+              amount: "2000.00",
               currency: "BRL",
             },
             isLMISublimit: true,
@@ -344,7 +344,7 @@ const finacialRiskPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           period: 10,
@@ -358,11 +358,11 @@ const finacialRiskPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           maxValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           percentage: 10,
@@ -395,7 +395,7 @@ const finacialRiskPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     proposalId: "string",
@@ -459,7 +459,7 @@ const finacialRiskPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         coverages: [
@@ -470,7 +470,7 @@ const finacialRiskPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
+              amount: "2000.00",
               currency: "BRL",
             },
             isLMISublimit: true,
@@ -497,7 +497,7 @@ const finacialRiskPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           period: 10,
@@ -511,11 +511,11 @@ const finacialRiskPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           maxValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           percentage: 10,
@@ -547,7 +547,7 @@ const finacialRiskPolicyInfoData = [
     leadInsurerCode: "string",
     leadInsurerPolicyId: "string",
     maxLMG: {
-      amount: 2000,
+      amount: "2000.00",
       currency: "BRL",
     },
     proposalId: "string",
@@ -611,7 +611,7 @@ const finacialRiskPolicyInfoData = [
         typeAdditionalInfo: "string",
         description: "string",
         amount: {
-          amount: 2000,
+          amount: "2000.00",
           currency: "BRL",
         },
         coverages: [
@@ -622,7 +622,7 @@ const finacialRiskPolicyInfoData = [
             internalCode: "string",
             susepProcessNumber: "string",
             LMI: {
-              amount: 2000,
+              amount: "2000.00",
               currency: "BRL",
             },
             isLMISublimit: true,
@@ -649,7 +649,7 @@ const finacialRiskPolicyInfoData = [
           type: "DEDUTIVEL",
           typeAdditionalInfo: "string",
           amount: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           period: 10,
@@ -663,11 +663,11 @@ const finacialRiskPolicyInfoData = [
           applicationType: "VALOR",
           description: "Descrição de exemplo",
           minValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           maxValue: {
-            amount: 2000,
+            amount: "2000.00",
             currency: "BRL",
           },
           percentage: 10,
