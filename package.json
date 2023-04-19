@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "aws:auth": "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 097353827472.dkr.ecr.us-east-1.amazonaws.com",
+    "aws:build": "docker build -t 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api:latest .",
+    "aws:push": "docker push 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api:latest"
   },
   "repository": {
     "type": "git",
