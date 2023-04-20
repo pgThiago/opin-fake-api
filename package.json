@@ -11,7 +11,7 @@
         "aws:push": "docker push 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api:latest",
         "aws:get:task": "aws ecs list-tasks --cluster opin-fake-api --query taskArns[0] | cut -d \"/\" -f 3 | cut -d '\"' -f 1",
         "aws:update:task": "aws ecs stop-task --cluster opin-fake-api --task ",
-        "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push"
+        "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push && yarn aws:get:task"
     },
     "repository": {
         "type": "git",

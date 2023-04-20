@@ -234,6 +234,7 @@ const housingPolicyInfoData = [
                     postCode: '10000000',
                     interestRate: '10.00',
                     costRate: '10.00',
+                    updateIndexOthers: 'Índice de atualização',
                     lenders: ['12345678901234'],
                 },
             ],
@@ -267,7 +268,7 @@ exports.getHousingClaim = (req, res, next) => {
     const filteredData = housingClaimData
         .filter((item) => item.policyId === policyId)
         .map((i) => {
-            const { cpf, ...rest } = i
+            const { cpf, policyId, ...rest } = i
             return rest
         })
 
@@ -293,7 +294,7 @@ exports.getHousingPremium = (req, res, next) => {
     const filteredData = housingPremiumData.find((item) => item.policyId === policyId)
 
     if (filteredData) {
-        const { cpf, ...rest } = filteredData
+        const { cpf, policyId, ...rest } = filteredData
         res.json(rest)
     }
 
