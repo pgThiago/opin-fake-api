@@ -13,7 +13,8 @@
         "aws:get:task": "aws ecs list-tasks --cluster opin-fake-api --query taskArns[0] | cut -d \"/\" -f 3 | cut -d '\"' -f 1",
         "aws:update:task": "aws ecs stop-task --cluster opin-fake-api --task ",
         "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push && yarn aws:get:task",
-        "aws:s3:sync": "zx scripts/sync-object.mjs"
+        "aws:s3:sync": "zx scripts/sync-object.mjs",
+        "aws:s3:all": "aws s3 sync ./mock-objects/ s3://mock-mapfre-dev/objects/"
     },
     "repository": {
         "type": "git",
