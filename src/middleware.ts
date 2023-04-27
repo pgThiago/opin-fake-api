@@ -1,14 +1,13 @@
 import axios from 'axios'
 import { NextFunction, Request, Response } from 'express'
 import { APIResponse } from './@types/response'
+import { ErrorHandler } from './exceptions/HttpError'
 
 export function ValidateQuery(req: Request, res: Response, next: NextFunction) {
   const { cpf, policyId } = req.query
 
   if (!cpf && !policyId) {
-    res.json({
-      error: 'Missing query parameters',
-    })
+    throw new ErrorHandler(400, { error: 'Missing query parameters' })
   }
 
   next()
@@ -18,7 +17,7 @@ export function ValidatePath(req: Request, res: Response, next: NextFunction) {
   const [, endpoint, resource] = req.path.split('/')
 
   if (!endpoint || !resource) {
-    res.status(400).json({
+    throw new ErrorHandler(400, {
       error: 'Bad Path. use as host/<endpoint-name>/<resource>',
     })
   }
@@ -38,7 +37,7 @@ export async function GetData(req: Request, res: Response, next: NextFunction) {
     res.locals.data = data
     next()
   } catch (e: any) {
-    return res.status(400).json({
+    throw new ErrorHandler(421, {
       error: 'An problem ocurred on get S3 object',
       calledUrl: e.config.url || undefined,
     })
