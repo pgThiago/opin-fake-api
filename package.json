@@ -14,7 +14,12 @@
         "aws:update:task": "aws ecs stop-task --cluster opin-fake-api --task ",
         "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push && yarn aws:get:task",
         "aws:s3:sync": "zx scripts/sync-object.mjs",
-        "aws:s3:all": "aws s3 sync ./mock-objects/ s3://mock-mapfre-dev/objects/"
+        "aws:s3:all": "aws s3 sync ./mock-objects/ s3://mock-mapfre-dev/objects/",
+        "aws:ecr:auth": "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 097353827472.dkr.ecr.us-east-1.amazonaws.com",
+        "aws:ecr:build": "docker build -t 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api-refactor:latest .",
+        "aws:ecr:push": "docker push 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api-refactor:latest",
+        "aws:ecs:get": "aws ecs list-tasks --cluster opin-fake-api-refactor --query taskArns[0] | cut -d \"/\" -f 3 | cut -d '\"' -f 1",
+        "aws:ecs:update": "aws ecs stop-task --cluster opin-fake-api --task "
     },
     "repository": {
         "type": "git",
@@ -28,7 +33,6 @@
     },
     "homepage": "https://github.com/joselng/opin-fake-api#readme",
     "dependencies": {
-        "@aws-sdk/client-s3": "^3.319.0",
         "axios": "^1.3.6",
         "cors": "^2.8.5",
         "express": "^4.18.1"
