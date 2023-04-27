@@ -1,12 +1,7 @@
 import cors from 'cors'
 import express from 'express'
-import {
-  GetByCPF,
-  GetByPolicyId,
-  GetData,
-  ValidatePath,
-  ValidateQuery,
-} from './middleware'
+import { GetData, ValidatePath, ValidateQuery } from './middleware'
+import { GetByCPF, GetByPolicyId } from './handlers'
 
 const app = express()
 
