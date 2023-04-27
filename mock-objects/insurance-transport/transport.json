@@ -1,0 +1,24 @@
+[
+  {
+    "cpf": "02325899926",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Transport Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["f762dcb3-5b5d-54ff-988f-93defd8dd01b"]
+      }
+    ]
+  },
+  {
+    "cpf": "02188705076",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Transport Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["e00dace0-104e-11ed-861d-0242ac120002"]
+      }
+    ]
+  }
+]

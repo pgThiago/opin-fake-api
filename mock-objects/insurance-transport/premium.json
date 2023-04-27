@@ -1,37 +1,76 @@
-{
-  "policyId": "e00dace0-104e-11ed-861d-0242ac120002",
-  "paymentsQuantity": 4,
-  "amount": {
-    "amount": 2000,
-    "currency": "BRL"
-  },
-  "coverages": [
-    {
-      "branch": "0111",
-      "code": "ACIDENTES_PESSOAIS_COM_PASSAGEIROS",
-      "description": "string",
-      "premiumAmount": {
-        "amount": "2000",
-        "currency": "BRL"
+[
+  {
+    "policyId": "e00dace0-104e-11ed-861d-0242ac120002",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "0111",
+        "code": "ACIDENTES_PESSOAIS_COM_PASSAGEIROS",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
       }
-    }
-  ],
-  "payments": [
-    {
-      "movementDate": "2022-12-31",
-      "movementType": "LIQUIDACAO_DE_PREMIO",
-      "movementOrigin": "EMISSAO_DIRETA",
-      "movementPaymentsNumber": 0,
-      "amount": {
-        "amount": 2000,
-        "currency": "BRL"
-      },
-      "maturityDate": "2022-12-31",
-      "tellerId": "string",
-      "tellerIdType": "CPF",
-      "tellerName": "string",
-      "financialInstitutionCode": "string",
-      "paymentType": "BOLETO"
-    }
-  ]
-}
+    ],
+    "payments": [
+      {
+        "movementDate": "2022-12-31",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "2022-12-31",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  },
+  {
+    "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "0111",
+        "code": "ACIDENTES_PESSOAIS_COM_PASSAGEIROS",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "movementDate": "2022-12-31",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "2022-12-31",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  }
+]
