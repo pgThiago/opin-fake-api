@@ -1,6 +1,6 @@
 <h1>
 <img src="https://cdn-icons-png.flaticon.com/512/8297/8297437.png" width="30" heigth="30" />
-  Opin Fake API
+  Opin Fake Api
 </h1>
 
 
@@ -56,7 +56,7 @@
 
 ## Build
 
-## Production (v1)
+### Production (v1)
 
 - Do aws authentication process with:
 
