@@ -1,5 +1,8 @@
 FROM node:16
 
+ARG NODE_ENV=production
+ENV NODE_ENV $NODE_ENV
+
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -9,12 +12,12 @@ WORKDIR /usr/src/app
 COPY ./build ./build
 COPY package*.json ./
 
-RUN npm install
+RUN NODE_ENV=$NODE_ENV npm install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+# COPY . .
 
 EXPOSE 80
 CMD [ "node", "build/server.js" ]
