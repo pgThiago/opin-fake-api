@@ -9,8 +9,6 @@ export function GetByCPF(req: Request, res: Response, next: NextFunction) {
 
   if (!cpf || alreadyHasData) return next()
 
-  console.log('get - cpf')
-
   const data = res.locals.data as APIResponse[]
 
   const filteredData = data
@@ -30,8 +28,6 @@ export function GetByPolicyId(req: Request, res: Response, next: NextFunction) {
     res.locals?.responseData && res.locals.responseData.length
 
   if (!policyId || alreadyHasData) return next()
-
-  console.log('get - policyId')
 
   const data = res.locals.data as APIResponse[]
 
