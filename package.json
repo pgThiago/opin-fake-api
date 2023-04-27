@@ -4,14 +4,15 @@
     "description": "opin-fake-api",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev:server": "ts-node-dev --respawn --transpile-only src/server.ts",
         "start": "node index.js",
         "aws:auth": "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 097353827472.dkr.ecr.us-east-1.amazonaws.com",
         "aws:build": "docker build -t 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api:latest .",
         "aws:push": "docker push 097353827472.dkr.ecr.us-east-1.amazonaws.com/opin-fake-api:latest",
         "aws:get:task": "aws ecs list-tasks --cluster opin-fake-api --query taskArns[0] | cut -d \"/\" -f 3 | cut -d '\"' -f 1",
         "aws:update:task": "aws ecs stop-task --cluster opin-fake-api --task ",
-        "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push && yarn aws:get:task"
+        "aws:deploy": "yarn aws:auth && yarn aws:build && yarn aws:push && yarn aws:get:task",
+        "aws:s3:sync": "zx scripts/sync-object.mjs"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,19 @@
     },
     "homepage": "https://github.com/joselng/opin-fake-api#readme",
     "dependencies": {
+        "@aws-sdk/client-s3": "^3.319.0",
+        "axios": "^1.3.6",
         "cors": "^2.8.5",
         "express": "^4.18.1"
+    },
+    "devDependencies": {
+        "@rocketseat/eslint-config": "^1.2.0",
+        "@types/cors": "^2.8.13",
+        "@types/express": "^4.17.17",
+        "@types/node": "^18.16.1",
+        "eslint": "^8.39.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.0.4",
+        "zx": "^7.2.1"
     }
 }
