@@ -1,0 +1,154 @@
+[
+  {
+    "policyId": "22261a20-b7c1-4f86-9209-f7357746f661",
+    "cpf": "02188705076",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "111",
+        "code": "CASCO_COMPREENSIVA",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "movementDate": "AAAA-MM-DD",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "AAAA-MM-DD",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  },
+  {
+    "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+    "cpf": "02325899926",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "111",
+        "code": "CASCO_COMPREENSIVA",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "movementDate": "AAAA-MM-DD",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "AAAA-MM-DD",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  },
+  {
+    "policyId": "071641e8-1050-11ed-861d-0242ac120002",
+    "cpf": "15387180065",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "111",
+        "code": "CASCO_COMPREENSIVA",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "movementDate": "AAAA-MM-DD",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "AAAA-MM-DD",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  },
+  {
+    "policyId": "e00dace0-104e-11ed-861d-0242ac120002",
+    "cpf": "02188705076",
+    "paymentsQuantity": 4,
+    "amount": {
+      "amount": 2000,
+      "currency": "BRL"
+    },
+    "coverages": [
+      {
+        "branch": "111",
+        "code": "CASCO_COMPREENSIVA",
+        "description": "string",
+        "premiumAmount": {
+          "amount": 2000,
+          "currency": "BRL"
+        }
+      }
+    ],
+    "payments": [
+      {
+        "movementDate": "AAAA-MM-DD",
+        "movementType": "LIQUIDACAO_DE_PREMIO",
+        "movementOrigin": "EMISSAO_DIRETA",
+        "movementPaymentsNumber": 0,
+        "amount": {
+          "amount": 2000,
+          "currency": "BRL"
+        },
+        "maturityDate": "AAAA-MM-DD",
+        "tellerId": "string",
+        "tellerIdType": "CPF",
+        "tellerName": "string",
+        "financialInstitutionCode": "string",
+        "paymentType": "BOLETO"
+      }
+    ]
+  }
+]

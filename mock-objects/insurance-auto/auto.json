@@ -1,0 +1,46 @@
+[
+  {
+    "cpf": "02188705076",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Auto Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["22261a20-b7c1-4f86-9209-f7357746f661"]
+      }
+    ]
+  },
+  {
+    "cpf": "02325899926",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Auto Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["f762dcb3-5b5d-54ff-988f-93defd8dd01b"]
+      }
+    ]
+  },
+  {
+    "cpf": "02188705076",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Auto Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["e00dace0-104e-11ed-861d-0242ac120002"]
+      }
+    ]
+  },
+  {
+    "cpf": "15387180065",
+    "brand": "MAPFRE",
+    "companies": [
+      {
+        "companyName": "MAPFRE Auto Mock",
+        "cnpjNumber": "12345678901234",
+        "policies": ["071641e8-1050-11ed-861d-0242ac120002"]
+      }
+    ]
+  }
+]
