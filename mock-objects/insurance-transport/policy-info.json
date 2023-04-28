@@ -2,7 +2,6 @@
   {
     "policyId": "e00dace0-104e-11ed-861d-0242ac120002",
     "documentType": "APOLICE_INDIVIDUAL",
-    "policyId": "111111",
     "susepProcessNumber": "string",
     "groupCertificateId": "string",
     "issuanceType": "EMISSAO_PROPRIA",
@@ -12,8 +11,11 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "proposalId": "string",
     "insureds": [
@@ -70,8 +72,11 @@
         "typeAdditionalInfo": "string",
         "description": "string",
         "amount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         },
         "coverages": [
           {
@@ -81,8 +86,11 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
+              "amount": "2000.00",
+              "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
             },
             "isLMISublimit": true,
             "termStartDate": "2022-12-31",
@@ -108,8 +116,11 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "period": 10,
           "periodicity": "DIA",
@@ -122,22 +133,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "branchInfo": {
@@ -148,21 +165,33 @@
           "shipmentsNumber": 10,
           "branch": "0111",
           "shipmentsPremium": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
-          "shipmentsPremiumBRL": 2000,
+          "shipmentsPremiumBRL": "2000.00",
           "shipmentsInsuredsAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "minInsuredAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "maxInsuredAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           }
         }
       ]
@@ -171,7 +200,6 @@
   {
     "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     "documentType": "APOLICE_INDIVIDUAL",
-    "policyId": "111111",
     "susepProcessNumber": "string",
     "groupCertificateId": "string",
     "issuanceType": "EMISSAO_PROPRIA",
@@ -181,8 +209,11 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "proposalId": "string",
     "insureds": [
@@ -239,8 +270,11 @@
         "typeAdditionalInfo": "string",
         "description": "string",
         "amount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         },
         "coverages": [
           {
@@ -250,8 +284,11 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
+              "amount": "2000.00",
+              "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
             },
             "isLMISublimit": true,
             "termStartDate": "2022-12-31",
@@ -277,8 +314,11 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "period": 10,
           "periodicity": "DIA",
@@ -291,22 +331,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "branchInfo": {
@@ -317,21 +363,33 @@
           "shipmentsNumber": 10,
           "branch": "0111",
           "shipmentsPremium": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
-          "shipmentsPremiumBRL": 2000,
+          "shipmentsPremiumBRL": "2000.00",
           "shipmentsInsuredsAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "minInsuredAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           },
           "maxInsuredAmount": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
           }
         }
       ]

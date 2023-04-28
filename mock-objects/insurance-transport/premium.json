@@ -3,8 +3,11 @@
     "policyId": "e00dace0-104e-11ed-861d-0242ac120002",
     "paymentsQuantity": 4,
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "coverages": [
       {
@@ -12,8 +15,11 @@
         "code": "ACIDENTES_PESSOAIS_COM_PASSAGEIROS",
         "description": "string",
         "premiumAmount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         }
       }
     ],
@@ -24,8 +30,11 @@
         "movementOrigin": "EMISSAO_DIRETA",
         "movementPaymentsNumber": 0,
         "amount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         },
         "maturityDate": "2022-12-31",
         "tellerId": "string",
@@ -40,8 +49,11 @@
     "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     "paymentsQuantity": 4,
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "coverages": [
       {
@@ -49,8 +61,11 @@
         "code": "ACIDENTES_PESSOAIS_COM_PASSAGEIROS",
         "description": "string",
         "premiumAmount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         }
       }
     ],
@@ -61,8 +76,11 @@
         "movementOrigin": "EMISSAO_DIRETA",
         "movementPaymentsNumber": 0,
         "amount": {
-          "amount": 2000,
-          "currency": "BRL"
+          "amount": "2000.00",
+          "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
         },
         "maturityDate": "2022-12-31",
         "tellerId": "string",
