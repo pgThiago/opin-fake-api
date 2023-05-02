@@ -1,0 +1,48 @@
+[
+    {
+        "policyId": "22261a20-b7c1-4f86-9209-f7357746f661",
+        "paymentsQuantity": 4,
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "coverages": [
+            {
+                "branch": "0111",
+                "code": "GRANIZO",
+                "description": "string",
+                "premiumAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                }
+            }
+        ],
+        "payments": [
+            {
+                "movementDate": "2022-12-31",
+                "movementType": "LIQUIDACAO_DE_PREMIO",
+                "movementOrigin": "EMISSAO_DIRETA",
+                "movementPaymentsNumber": 0,
+                "amount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "maturityDate": "2022-12-31",
+                "tellerId": "string",
+                "tellerIdType": "CPF",
+                "tellerName": "string",
+                "financialInstitutionCode": "string",
+                "paymentType": "BOLETO"
+            }
+        ]
+    }
+]
