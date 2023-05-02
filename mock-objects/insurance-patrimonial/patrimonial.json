@@ -1,0 +1,23 @@
+[
+    {
+        "brand": "MAPFRE",
+        "companies": [
+            {
+                "companyName": "MAPFRE Patrimonial Mock",
+                "cnpjNumber": "12345678901234",
+                "policies": [
+                    "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+                    "f9421cf6-fa6a-4545-879e-b67d63bd8b66",
+                    "ddcc22fa-ab36-40e1-a01f-a5fb09c8c600",
+                    "c50873ea-f526-4149-8285-02ba6e1ab960",
+                    "e76d5d9a-87b4-44e3-92df-085469c8dffe",
+                    "06ee745b-9c2d-47ae-b9c2-a0814f1ebad9",
+                    "92682926-a159-4afd-a094-54baa3eadfec",
+                    "1a4b8499-9d78-4a71-a176-72518f766c7c",
+                    "29b10fd3-40f9-4762-a871-6d5d46d719e6",
+                    "c4834650-c909-4a58-a74c-9596267b7ce5"
+                ]
+            }
+        ]
+    }
+]
