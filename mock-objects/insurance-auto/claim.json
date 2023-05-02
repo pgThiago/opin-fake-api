@@ -10,9 +10,12 @@
     "warningDate": "AAAA-MM-DD",
     "thirdPartyClaimDate": "AAAA-MM-DD",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+        "amount": "2000.00",
+        "unit": {
+          "code": "R$",
+          "description": "BRL"
+        }
+      },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
     "coverages": [
@@ -45,9 +48,12 @@
     "warningDate": "AAAA-MM-DD",
     "thirdPartyClaimDate": "AAAA-MM-DD",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+        "amount": "2000.00",
+        "unit": {
+          "code": "R$",
+          "description": "BRL"
+        }
+      },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
     "coverages": [
@@ -80,9 +86,12 @@
     "warningDate": "AAAA-MM-DD",
     "thirdPartyClaimDate": "AAAA-MM-DD",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+        "amount": "2000.00",
+        "unit": {
+          "code": "R$",
+          "description": "BRL"
+        }
+      },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
     "coverages": [
@@ -115,9 +124,12 @@
     "warningDate": "AAAA-MM-DD",
     "thirdPartyClaimDate": "AAAA-MM-DD",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+        "amount": "2000.00",
+        "unit": {
+          "code": "R$",
+          "description": "BRL"
+        }
+      },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
     "coverages": [
