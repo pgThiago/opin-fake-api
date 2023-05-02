@@ -9,8 +9,11 @@
     "warningDate": "2022-12-31",
     "thirdPartyClaimDate": "2022-12-31",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
@@ -35,8 +38,11 @@
     "warningDate": "2022-12-31",
     "thirdPartyClaimDate": "2022-12-31",
     "amount": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "denialJustification": "RISCO_EXCLUIDO",
     "denialJustificationDescription": "string",
