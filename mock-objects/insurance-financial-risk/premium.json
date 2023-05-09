@@ -1,47 +1,143 @@
-{
-    "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
-    "cpf": "02325899926",
-    "paymentsQuantity": 4,
-    "amount": {
-        "amount": "2000.00",
-        "unit": {
-            "code": "R$",
-            "description": "BRL"
-        }
-    },
-    "coverages": [
-        {
-            "branch": "111",
-            "code": "PROTECAO_DE_BENS",
-            "description": "string",
-            "premiumAmount": {
-                "amount": "2000.00",
-                "unit": {
-                    "code": "R$",
-                    "description": "BRL"
+[
+    {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+        "cpf": "02325899926",
+        "paymentsQuantity": 4,
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "coverages": [
+            {
+                "branch": "111",
+                "code": "PROTECAO_DE_BENS",
+                "description": "string",
+                "premiumAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
                 }
             }
-        }
-    ],
-    "payments": [
-        {
-            "movementDate": "AAAA-MM-DD",
-            "movementType": "LIQUIDACAO_DE_PREMIO",
-            "movementOrigin": "EMISSAO_DIRETA",
-            "movementPaymentsNumber": 0,
-            "amount": {
-                "amount": "2000.00",
-                "unit": {
-                    "code": "R$",
-                    "description": "BRL"
+        ],
+        "payments": [
+            {
+                "movementDate": "AAAA-MM-DD",
+                "movementType": "LIQUIDACAO_DE_PREMIO",
+                "movementOrigin": "EMISSAO_DIRETA",
+                "movementPaymentsNumber": 0,
+                "amount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "maturityDate": "AAAA-MM-DD",
+                "tellerId": "string",
+                "tellerIdType": "CPF",
+                "tellerName": "string",
+                "financialInstitutionCode": "string",
+                "paymentType": "BOLETO"
+            }
+        ]
+    },
+    {
+        "cpf": "15387180065",
+        "policyId": "071641e8-1050-11ed-861d-0242ac120002",
+        "paymentsQuantity": 4,
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "coverages": [
+            {
+                "branch": "111",
+                "code": "PROTECAO_DE_BENS",
+                "description": "string",
+                "premiumAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
                 }
-            },
-            "maturityDate": "AAAA-MM-DD",
-            "tellerId": "string",
-            "tellerIdType": "CPF",
-            "tellerName": "string",
-            "financialInstitutionCode": "string",
-            "paymentType": "BOLETO"
-        }
-    ]
-}
+            }
+        ],
+        "payments": [
+            {
+                "movementDate": "AAAA-MM-DD",
+                "movementType": "LIQUIDACAO_DE_PREMIO",
+                "movementOrigin": "EMISSAO_DIRETA",
+                "movementPaymentsNumber": 0,
+                "amount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "maturityDate": "AAAA-MM-DD",
+                "tellerId": "string",
+                "tellerIdType": "CPF",
+                "tellerName": "string",
+                "financialInstitutionCode": "string",
+                "paymentType": "BOLETO"
+            }
+        ]
+    },
+    {
+        "policyId": "22261a20-b7c1-4f86-9209-f7357746f661",
+        "cpf": "02188705076",
+        "paymentsQuantity": 4,
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "coverages": [
+            {
+                "branch": "111",
+                "code": "PROTECAO_DE_BENS",
+                "description": "string",
+                "premiumAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                }
+            }
+        ],
+        "payments": [
+            {
+                "movementDate": "AAAA-MM-DD",
+                "movementType": "LIQUIDACAO_DE_PREMIO",
+                "movementOrigin": "EMISSAO_DIRETA",
+                "movementPaymentsNumber": 0,
+                "amount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "maturityDate": "AAAA-MM-DD",
+                "tellerId": "string",
+                "tellerIdType": "CPF",
+                "tellerName": "string",
+                "financialInstitutionCode": "string",
+                "paymentType": "BOLETO"
+            }
+        ]
+    }
+]
