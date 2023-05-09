@@ -1,0 +1,49 @@
+[
+    {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+        "cpf": "02325899926",
+        "paymentsQuantity": 4,
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "coverages": [
+            {
+                "branch": "0111",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                "description": "string",
+                "premiumAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                }
+            }
+        ],
+        "payments": [
+            {
+                "movementDate": "2022-12-31",
+                "movementType": "LIQUIDACAO_DE_PREMIO",
+                "movementOrigin": "EMISSAO_DIRETA",
+                "movementPaymentsNumber": 0,
+                "amount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "maturityDate": "2022-12-31",
+                "tellerId": "string",
+                "tellerIdType": "CPF",
+                "tellerName": "string",
+                "financialInstitutionCode": "string",
+                "paymentType": "BOLETO"
+            }
+        ]
+    }
+]
