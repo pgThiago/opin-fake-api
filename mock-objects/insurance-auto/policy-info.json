@@ -1,5 +1,6 @@
 [
   {
+    "documentType": "APOLICE_INDIVIDUAL",
     "cpf": "02188705076",
     "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
     "susepProcessNumber": "string",
@@ -11,8 +12,11 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
+      "amount": "2000.00",
+      "unit": {
+        "code": "R$",
+        "description": "BRL"
+      }
     },
     "proposalId": "string",
     "insureds": [
@@ -32,13 +36,7 @@
       {
         "identification": "12345678900",
         "identificationType": "CPF",
-        "name": "Nome Sobrenome",
-        "postCode": "10000000",
-        "email": "string",
-        "city": "string",
-        "state": "string",
-        "country": "BRA",
-        "address": "string"
+        "name": "Nome Sobrenome"
       }
     ],
     "principals": [
@@ -92,8 +90,11 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
             },
             "termStartDate": "AAAA-MM-DD",
             "termEndDate": "AAAA-MM-DD",
@@ -105,14 +106,17 @@
             "gracePeriodCountingMethod": "DIAS_UTEIS",
             "gracePeriodStartDate": "AAAA-MM-DD",
             "gracePeriodEndDate": "AAAA-MM-DD",
-            "adjustmentRate": 10,
+            "adjustmentRate": "10.00",
             "premiumAmount": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },            
             "compensationType": "PARCIAL",
-            "partialCompensationPercentage": 10,
-            "percentageOverLMI": 10,
+            "partialCompensationPercentage": "10.00",
+            "percentageOverLMI": "10.00",
             "daysForTotalCompensation": 0,
             "boundCoverage": "VEICULO"
           }
@@ -128,9 +132,12 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-          },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
           "period": 10,
           "periodicity": "DIA",
           "periodCountingMethod": "DIAS_UTEIS",
@@ -142,22 +149,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "repairNetwork": "REDE_REFERENCIADA",
@@ -169,7 +182,7 @@
     "otherBenefits": "DESCONTOS",
     "assistancePackages": "ATE_DEZ_SERVICOS",
     "isExpiredRiskPolicy": true,
-    "bonusDiscountRate": 0,
+    "bonusDiscountRate": "0.00",
     "bonusClass": "string",
     "drivers": [
       {
@@ -193,9 +206,12 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
     "proposalId": "string",
     "insureds": [
       {
@@ -214,13 +230,7 @@
       {
         "identification": "12345678900",
         "identificationType": "CPF",
-        "name": "Nome Sobrenome",
-        "postCode": "10000000",
-        "email": "string",
-        "city": "string",
-        "state": "string",
-        "country": "BRA",
-        "address": "string"
+        "name": "Nome Sobrenome"
       }
     ],
     "principals": [
@@ -274,9 +284,12 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
+          },
             "termStartDate": "AAAA-MM-DD",
             "termEndDate": "AAAA-MM-DD",
             "isMainCoverage": true,
@@ -287,14 +300,17 @@
             "gracePeriodCountingMethod": "DIAS_UTEIS",
             "gracePeriodStartDate": "AAAA-MM-DD",
             "gracePeriodEndDate": "AAAA-MM-DD",
-            "adjustmentRate": 10,
+            "adjustmentRate": "10.00",
             "premiumAmount": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
+          },
             "compensationType": "PARCIAL",
-            "partialCompensationPercentage": 10,
-            "percentageOverLMI": 10,
+            "partialCompensationPercentage": "10.00",
+            "percentageOverLMI": "10.00",
             "daysForTotalCompensation": 0,
             "boundCoverage": "VEICULO"
           }
@@ -310,9 +326,12 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-          },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
           "period": 10,
           "periodicity": "DIA",
           "periodCountingMethod": "DIAS_UTEIS",
@@ -324,22 +343,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "repairNetwork": "REDE_REFERENCIADA",
@@ -351,7 +376,7 @@
     "otherBenefits": "DESCONTOS",
     "assistancePackages": "ATE_DEZ_SERVICOS",
     "isExpiredRiskPolicy": true,
-    "bonusDiscountRate": 0,
+    "bonusDiscountRate": "0.00",
     "bonusClass": "string",
     "drivers": [
       {
@@ -375,9 +400,12 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
     "proposalId": "string",
     "insureds": [
       {
@@ -396,13 +424,7 @@
       {
         "identification": "12345678900",
         "identificationType": "CPF",
-        "name": "Nome Sobrenome",
-        "postCode": "10000000",
-        "email": "string",
-        "city": "string",
-        "state": "string",
-        "country": "BRA",
-        "address": "string"
+        "name": "Nome Sobrenome"
       }
     ],
     "principals": [
@@ -456,9 +478,12 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
+          },
             "termStartDate": "AAAA-MM-DD",
             "termEndDate": "AAAA-MM-DD",
             "isMainCoverage": true,
@@ -469,14 +494,17 @@
             "gracePeriodCountingMethod": "DIAS_UTEIS",
             "gracePeriodStartDate": "AAAA-MM-DD",
             "gracePeriodEndDate": "AAAA-MM-DD",
-            "adjustmentRate": 10,
+            "adjustmentRate": "10.00",
             "premiumAmount": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
+          },
             "compensationType": "PARCIAL",
-            "partialCompensationPercentage": 10,
-            "percentageOverLMI": 10,
+            "partialCompensationPercentage": "10.00",
+            "percentageOverLMI": "10.00",
             "daysForTotalCompensation": 0,
             "boundCoverage": "VEICULO"
           }
@@ -492,9 +520,12 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-          },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
           "period": 10,
           "periodicity": "DIA",
           "periodCountingMethod": "DIAS_UTEIS",
@@ -506,22 +537,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "repairNetwork": "REDE_REFERENCIADA",
@@ -533,7 +570,7 @@
     "otherBenefits": "DESCONTOS",
     "assistancePackages": "ATE_DEZ_SERVICOS",
     "isExpiredRiskPolicy": true,
-    "bonusDiscountRate": 0,
+    "bonusDiscountRate": "0.00",
     "bonusClass": "string",
     "drivers": [
       {
@@ -557,9 +594,12 @@
     "leadInsurerCode": "string",
     "leadInsurerPolicyId": "string",
     "maxLMG": {
-      "amount": 2000,
-      "currency": "BRL"
-    },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
     "proposalId": "string",
     "insureds": [
       {
@@ -578,13 +618,7 @@
       {
         "identification": "12345678900",
         "identificationType": "CPF",
-        "name": "Nome Sobrenome",
-        "postCode": "10000000",
-        "email": "string",
-        "city": "string",
-        "state": "string",
-        "country": "BRA",
-        "address": "string"
+        "name": "Nome Sobrenome"
       }
     ],
     "principals": [
@@ -638,9 +672,12 @@
             "internalCode": "string",
             "susepProcessNumber": "string",
             "LMI": {
-              "amount": 2000,
-              "currency": "BRL"
-            },
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
+          },
             "termStartDate": "AAAA-MM-DD",
             "termEndDate": "AAAA-MM-DD",
             "isMainCoverage": true,
@@ -651,14 +688,17 @@
             "gracePeriodCountingMethod": "DIAS_UTEIS",
             "gracePeriodStartDate": "AAAA-MM-DD",
             "gracePeriodEndDate": "AAAA-MM-DD",
-            "adjustmentRate": 10,
+            "adjustmentRate": "10.00",
             "premiumAmount": {
-              "amount": 2000,
-              "currency": "BRL"
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
             },
             "compensationType": "PARCIAL",
-            "partialCompensationPercentage": 10,
-            "percentageOverLMI": 10,
+            "partialCompensationPercentage": "10.00",
+            "percentageOverLMI": "10.00",
             "daysForTotalCompensation": 0,
             "boundCoverage": "VEICULO"
           }
@@ -674,9 +714,12 @@
           "type": "DEDUTIVEL",
           "typeAdditionalInfo": "string",
           "amount": {
-            "amount": 2000,
-            "currency": "BRL"
-          },
+              "amount": "2000.00",
+              "unit": {
+                "code": "R$",
+                "description": "BRL"
+              }
+            },
           "period": 10,
           "periodicity": "DIA",
           "periodCountingMethod": "DIAS_UTEIS",
@@ -688,22 +731,28 @@
           "applicationType": "VALOR",
           "description": "Descrição de exemplo",
           "minValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
           "maxValue": {
-            "amount": 2000,
-            "currency": "BRL"
+            "amount": "2000.00",
+            "unit": {
+              "code": "R$",
+              "description": "BRL"
+            }
           },
-          "percentage": 10
+          "percentage": "10.00"
         }
       }
     ],
-    "coinsuranceRetainedPercentage": 10,
+    "coinsuranceRetainedPercentage": "10.00",
     "coinsurers": [
       {
         "identification": "string",
-        "cededPercentage": 10
+        "cededPercentage": "10.00"
       }
     ],
     "repairNetwork": "REDE_REFERENCIADA",
@@ -715,7 +764,7 @@
     "otherBenefits": "DESCONTOS",
     "assistancePackages": "ATE_DEZ_SERVICOS",
     "isExpiredRiskPolicy": true,
-    "bonusDiscountRate": 0,
+    "bonusDiscountRate": "0.00",
     "bonusClass": "string",
     "drivers": [
       {
