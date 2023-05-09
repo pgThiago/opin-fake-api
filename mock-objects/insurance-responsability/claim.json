@@ -1,0 +1,32 @@
+[
+    {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+        "cpf": "02325899926",
+        "identification": "string",
+        "documentationDeliveryDate": "2022-12-31",
+        "status": "ABERTO",
+        "statusAlterationDate": "2022-12-31",
+        "occurrenceDate": "2022-12-31",
+        "warningDate": "2022-12-31",
+        "thirdPartyClaimDate": "2022-12-31",
+        "amount": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "denialJustification": "RISCO_EXCLUIDO",
+        "denialJustificationDescription": "string",
+        "coverages": [
+            {
+                "insuredObjectId": "string",
+                "branch": "0111",
+                "code": "DANOS_CAUSADOS_A_TERCEIROS",
+                "description": "string",
+                "warningDate": "2022-12-31",
+                "thirdPartyClaimDate": "2022-12-31"
+            }
+        ]
+    }
+]
