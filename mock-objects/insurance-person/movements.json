@@ -1,0 +1,38 @@
+[
+    {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+        "movementContributions": [
+            {
+                "contributionAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "contributionPaymentDate": "2021-05-21",
+                "contributionExpirationDate": "2021-05-21",
+                "chargedInAdvanceAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "periodicity": "MENSAL"
+            }
+        ],
+        "movementBenefits": [
+            {
+                "benefitAmount": {
+                    "amount": "2000.00",
+                    "unit": {
+                        "code": "R$",
+                        "description": "BRL"
+                    }
+                },
+                "benefitPaymentDate": "2021-05-21"
+            }
+        ]
+    }
+]

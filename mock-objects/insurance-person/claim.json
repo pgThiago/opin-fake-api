@@ -1,0 +1,30 @@
+[
+    {
+        "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b",
+        "status": "ABERTO",
+        "warningDate": "2022-12-31",
+        "warningRegisterDate": "2022-12-31",
+        "recipientIdentification": "12345678901",
+        "recipientIdentificationType": "CPF",
+        "recipientName": "Nome Sobrenome",
+        "recipientClassification": "SEGURADO",
+        "recipientBirthDate": "1990-12-31",
+        "incomeModality": "RENDA_VITALICIA",
+        "incomeModalityOthers": "Outros",
+        "incomeReversed": true,
+        "incomeValueUniquePayment": {
+            "amount": "2000.00",
+            "unit": {
+                "code": "R$",
+                "description": "BRL"
+            }
+        },
+        "incomeTerm": "string",
+        "recipientNumber": 3,
+        "concessionStartDate": "2020-12-31",
+        "monetaryUpdateIndex": "IGPM-FGV",
+        "monetaryUpdateIndexOthers": "OUTROS",
+        "lastUpdateDate": "2020-12-31",
+        "defermentDueDate": "2025-12-31"
+    }
+]
