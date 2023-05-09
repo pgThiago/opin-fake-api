@@ -60,8 +60,8 @@
         ]
     },
     {
-        "cpf": "15387180065",
         "policyId": "071641e8-1050-11ed-861d-0242ac120002",
+        "cpf": "15387180065",
         "identification": "string",
         "documentationDeliveryDate": "AAAA-MM-DD",
         "status": "ABERTO",
