@@ -1,0 +1,20 @@
+[
+    {
+        "cpf": "02325899926",
+        "brand": {
+            "name": "MAPFRE",
+            "companies": [
+                {
+                    "companyName": "MAPFRE Person Mock",
+                    "cnpjNumber": "12345678901234",
+                    "policies": [
+                        {
+                            "productName": "Produto A Pessoas",
+                            "policyId": "f762dcb3-5b5d-54ff-988f-93defd8dd01b"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
