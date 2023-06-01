@@ -10,11 +10,11 @@ const quotePatrimonialCondominiumQuoteStatus = [
   {
     policyId: '22261a20-b7c1-4f86-9209-f7357746f661',
     status: 'stri',
-    statusUpdateDateTime: '2021-05-21T08:30:00Z',
+    statusUpdateDateTime: new Date().toISOString(),
     quoteData: {
       customerInfo: {
         identification: {
-          updateDateTime: '2021-05-21T08:30:00Z',
+          updateDateTime: new Date().toISOString(),
           businessId: '578-psd-71md6971kjh-2d414',
           brandName: 'Organização A',
           companyInfo: {

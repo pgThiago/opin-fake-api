@@ -13,7 +13,7 @@ const quotePatrimonialHomeQuoteStatus = [
     statusUpdateDateTime: new Date().toISOString(),
     quoteCustomer: {
       identificationData: {
-        updateDateTime: '2021-05-21T08:30:00Z',
+        updateDateTime: new Date().toISOString(),
         personalId: '578-psd-71md6971kjh-2d414',
         brandName: 'Organização A',
         civilName: 'Juan Kaique Cláudio Fernandes',
