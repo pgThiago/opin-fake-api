@@ -2,9 +2,9 @@ import 'express-async-errors'
 
 import cors from 'cors'
 import express, { NextFunction, Request, Response } from 'express'
-import { GetData, ValidatePath, ValidateQuery } from './middleware'
-import { GetByCPF, GetByPolicyId } from './handlers'
 import { ErrorHandler } from './exceptions/HttpError'
+import { GetByCPF, GetByPolicyId } from './handlers'
+import { GetData, ValidatePath, ValidateQuery } from './middleware'
 
 const app = express()
 
@@ -23,24 +23,24 @@ app.use(GetByCPF)
 app.use(GetByPolicyId)
 
 app.get('/*', async (req, res) => {
-  return res.json(res.locals.responseData)
+    return res.json(res.locals.responseData)
 })
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
-  if (err instanceof ErrorHandler) {
-    const error = err as ErrorHandler
-    return res.status(error.statusCode).json({ ...error.errorData })
-  }
+    if (err instanceof ErrorHandler) {
+        const error = err as ErrorHandler
+        return res.status(error.statusCode).json({ ...error.errorData })
+    }
 
-  if (err.message) {
-    return res.status(400).json({
-      error: err.message,
+    if (err.message) {
+        return res.status(400).json({
+            error: err.message,
+        })
+    }
+
+    return res.status(500).json({
+        error: `Internal Error - ${err.message}`,
     })
-  }
-
-  return res.status(500).json({
-    error: `Internal Error - ${err.message}`,
-  })
 })
 
 export { app }

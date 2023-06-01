@@ -1,36 +1,28 @@
 [
     {
+        "policyId": "22261a20-b7c1-4f86-9209-f7357746f661",
         "status": "stri",
         "statusUpdateDateTime": "2021-05-21T08:30:00Z",
         "quoteData": {
             "customerInfo": {
                 "identification": {
                     "updateDateTime": "2021-05-21T08:30:00Z",
-                    "personalId": "578-psd-71md6971kjh-2d414",
+                    "businessId": "578-psd-71md6971kjh-2d414",
                     "brandName": "Organização A",
-                    "civilName": "Juan Kaique Cláudio Fernandes",
-                    "socialName": "string",
-                    "cpfNumber": "51222854892",
                     "companyInfo": {
                         "cnpjNumber": "01773247000563",
                         "name": "Empresa da Organização A"
                     },
-                    "documents": [
-                        {
-                            "type": "CNH",
-                            "number": "15291908",
-                            "expirationDate": "2023-05-21",
-                            "issueLocation": "string"
-                        }
-                    ],
-                    "hasBrazilianNationality": false,
-                    "otherNationalitiesInfo": "CAN",
-                    "otherDocuments": {
-                        "type": "SOCIAL SEC",
-                        "number": "15291908",
-                        "country": "string",
+                    "businessName": "Luiza e Benjamin Assessoria Jurídica Ltda",
+                    "businessTradeName": "Organização B",
+                    "incorporationDate": "2012-05-21",
+                    "document": {
+                        "businesscnpjNumber": "50685362006773",
+                        "businessRegisterNumberOriginCountry": "string",
+                        "country": "BRA",
                         "expirationDate": "2023-05-21"
                     },
+                    "type": "PRIVADO",
                     "contact": {
                         "postalAddresses": [
                             {
@@ -40,7 +32,13 @@
                                 "townName": "Marília",
                                 "countrySubDivision": "SP",
                                 "postCode": "17500001",
-                                "country": "BRA"
+                                "ibgeTownCode": "17500001",
+                                "country": "Brasil",
+                                "countryCode": "BRA",
+                                "geographicCoordinates": {
+                                    "latitude": "-23.5475000",
+                                    "longitude": "-46.6361100"
+                                }
                             }
                         ],
                         "phones": [
@@ -57,43 +55,38 @@
                             }
                         ]
                     },
-                    "civilStatusCode": "SOLTEIRO",
-                    "sex": "FEMININO",
-                    "birthDate": "2021-05-21",
-                    "filiation": {
-                        "type": "MAE",
-                        "civilName": "Marcelo Cláudio Fernandes"
-                    },
-                    "identificationDetails": {
-                        "civilName": "Juan Kaique Cláudio Fernandes",
-                        "cpfNumber": "02629463112"
-                    }
+                    "parties": [
+                        {
+                            "type": "SOCIO",
+                            "civilName": "Juan Kaique Cláudio Fernandes",
+                            "socialName": "string",
+                            "startDate": "2014-05-21",
+                            "shareholding": "0.510000",
+                            "documentType": "CPF",
+                            "documentNumber": "73677831148",
+                            "documentCountry": "BRA",
+                            "documentExpirationDate": "2021-05-21"
+                        }
+                    ]
                 },
                 "qualification": {
                     "updateDateTime": "2021-05-21T08:30:00Z",
-                    "pepIdentification": "NAO_EXPOSTO",
-                    "occupation": [
-                        {
-                            "details": "string",
-                            "occupationCode": "RECEITA_FEDERAL",
-                            "occupationCodeType": "RFB"
-                        }
-                    ],
-                    "lifePensionPlans": "SIM",
+                    "mainBranch": "string",
+                    "secondaryBranch": "string",
                     "informedRevenue": {
                         "incomeFrequency": "DIARIA",
                         "currency": "BRL",
                         "amount": "100000.04",
-                        "date": "2012-05-21"
+                        "year": "2010"
                     },
                     "informedPatrimony": {
                         "currency": "BRL",
                         "amount": "100000.04",
-                        "year": "2010"
+                        "date": "2012-05-21"
                     }
                 },
                 "complimentaryInfo": {
-                    "updateDateTime": "2021-05-21T08:30:00Z",
+                    "updateDateTime": "2020-07-21T08:30:00Z",
                     "startDate": "2014-05-21",
                     "relationshipBeginning": "2014-05-21",
                     "productsServices": [
@@ -114,15 +107,18 @@
                 }
             },
             "quoteInfo": {
-                "isCollectiveStipulated": true,
-                "hasOneRiskLocation": true,
+                "mainActivity": "COMERCIO",
+                "isLegallyConstituted": true,
+                "condominiumType": true,
                 "termStartDate": "2022-10-02T00:00:00.000Z",
                 "termEndDate": "2022-10-02T00:00:00.000Z",
                 "quoteId": "12345678",
+                "insuranceTermStartDate": "2022-10-02T00:00:00.000Z",
                 "insuranceType": "NOVO",
                 "policyId": "111111",
                 "insurerId": "string",
                 "currency": "BRL",
+                "basicCoverageIndex": "SIMPLES",
                 "maxLMG": {
                     "amount": "2000.00",
                     "unit": {
@@ -150,44 +146,23 @@
                                 "internalCode": "string"
                             }
                         ],
-                        "riskAmount": {
-                            "amount": "2000.00",
-                            "unit": {
-                                "code": "R$",
-                                "description": "BRL"
-                            }
-                        },
-                        "mainActivity": "COMERCIO",
-                        "businessActivity": "string",
-                        "businessActivityDescription": "string",
-                        "professionalRegisterOrganization": "OAB-PR",
-                        "professionalRegisterNumber": "OAB-PR",
-                        "selfEmployeeJobTitle": "ADMINISTRADORES",
-                        "propertiesForCoverage": "PREDIO_E_CONTEUDO",
+                        "structuringType": "CONDOMINIO_VERTICAL",
+                        "propertyType": "CONDOMINIO_RESIDENCIAL_COM_COMERCIO_NO_TERREO",
+                        "hasElevator": true,
+                        "isFullyOrPartiallyListed": true,
+                        "numberOfBlocks": "3",
+                        "condominiumAge": "20",
+                        "hasReuseOfWater": true,
+                        "securityProtection": ["CAMERA_CFTV"],
                         "riskLocationInfo": {
                             "address": "Avenida Paulista, 2000",
                             "additionalInfo": "Apartamento 1304",
                             "districtName": "Cerqueira César",
                             "townName": "São Paulo",
                             "countrySubDivision": "AC",
-                            "postCode": "1310200",
-                            "billingAddress": "Avenida Paulista, 2000",
-                            "billingAdditionalInfo": "Apartamento 1304",
-                            "billingDistrictName": "Cerqueira César",
-                            "billingTownName": "São Paulo",
-                            "billingCountrySubDivision": "AC",
-                            "billingPostCode": "1310200",
-                            "propertyUsageType": "HABITUAL",
-                            "propertyBuildType": "SUPERIOR",
-                            "isListedDisappropriatedCondemned": true,
-                            "isUnderConstructionRenovation": true,
-                            "securityProtection": ["CAMERA_CFTV"],
-                            "fireProtection": ["EXTINTOR"],
-                            "propertyUseType": "PROPRIO",
-                            "isMainlyOpen": true,
-                            "hasInsulatingPanels": true,
-                            "isInMall": true
+                            "postCode": "1310200"
                         },
+                        "indenizationWithoutDepreciation": true,
                         "wasThereAClaim": true,
                         "claimNotifications": [
                             {
@@ -201,13 +176,6 @@
                                 "claimDescription": "string"
                             }
                         ]
-                    }
-                ],
-                "beneficiaries": [
-                    {
-                        "identification": "12345678900",
-                        "identificationType": "CPF",
-                        "name": "Nome Sobrenome"
                     }
                 ]
             },
