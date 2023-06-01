@@ -1,5 +1,6 @@
 const quotePatrimonialCondominiumRequest = [
   {
+    policyId: '22261a20-b7c1-4f86-9209-f7357746f661',
     status: 'OK',
     statusUpdateDateTime: new Date().toISOString(),
   },
@@ -7,6 +8,7 @@ const quotePatrimonialCondominiumRequest = [
 
 const quotePatrimonialCondominiumQuoteStatus = [
   {
+    policyId: '22261a20-b7c1-4f86-9209-f7357746f661',
     status: 'stri',
     statusUpdateDateTime: '2021-05-21T08:30:00Z',
     quoteData: {
